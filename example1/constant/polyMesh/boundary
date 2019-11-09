@@ -1,0 +1,130 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+18
+(
+    floor
+    {
+        type            wall;
+        nFaces          588;
+        startFace       26223;
+    }
+    ceiling
+    {
+        type            wall;
+        nFaces          796;
+        startFace       26811;
+    }
+    eWall
+    {
+        type            wall;
+        nFaces          364;
+        startFace       27607;
+    }
+    sWall
+    {
+        type            wall;
+        nFaces          60;
+        startFace       27971;
+    }
+    wWall
+    {
+        type            wall;
+        nFaces          472;
+        startFace       28031;
+    }
+    nWall
+    {
+        type            wall;
+        nFaces          216;
+        startFace       28503;
+    }
+    kitchenT_K
+    {
+        type            wall;
+        nFaces          196;
+        startFace       28719;
+    }
+    diningT_D
+    {
+        type            wall;
+        nFaces          133;
+        startFace       28915;
+    }
+    livingT_L
+    {
+        type            wall;
+        nFaces          56;
+        startFace       29048;
+    }
+    AC_AC
+    {
+        type            wall;
+        nFaces          16;
+        startFace       29104;
+    }
+    sunD_sunD
+    {
+        type            wall;
+        nFaces          64;
+        startFace       29120;
+    }
+    sunG_sunG
+    {
+        type            wall;
+        nFaces          101;
+        startFace       29184;
+    }
+    inlet
+    {
+        type            wall;
+        nFaces          80;
+        startFace       29285;
+    }
+    inglass1
+    {
+        type            wall;
+        nFaces          50;
+        startFace       29365;
+    }
+    inglass2
+    {
+        type            wall;
+        nFaces          50;
+        startFace       29415;
+    }
+    midglass
+    {
+        type            wall;
+        nFaces          70;
+        startFace       29465;
+    }
+    outlet
+    {
+        type            wall;
+        nFaces          12;
+        startFace       29535;
+    }
+    outglass
+    {
+        type            wall;
+        nFaces          12;
+        startFace       29547;
+    }
+)
+
+// ************************************************************************* //

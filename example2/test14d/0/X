@@ -1,0 +1,226 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      X;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 0.012;
+
+boundaryField
+{
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 0.012;
+    }
+    outlet
+    {
+        type            fixedValue;
+        value           uniform 0.0;
+    }
+
+    bed_bed
+    {
+        type            fixedValue;
+        value           uniform 0.0;
+    }
+    floor
+    {
+        type            fixedValue;
+        value           uniform 0.0;
+    }
+    ceiling
+    {
+        type            fixedValue;
+        value           uniform 0.0;
+    }
+    "(south|east|west)"
+    {
+        type            fixedValue;
+        value           uniform 0.0;
+    }
+    north
+    {
+        type            fixedValue;
+        value           uniform 0.0;
+    }
+    body_0
+    {
+        type            fixedValue;
+        value           uniform 0.0;
+    }
+    back_left_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170208;
+    }
+    back_right_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170207;
+    }
+    chest_left_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170206;
+    }
+    chest_right_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170205;
+    }
+    waist_left_back_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170212;
+    }
+    waist_left_front_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170011;
+    }
+    waist_right_back_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170211;
+    }
+    waist_right_front_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170209;
+    }
+    femur_left_back_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170229;
+    }
+    femur_left_front_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170228;
+    }
+    femur_right_back_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170224;
+    }
+    femur_right_front_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170223;
+    }
+    lowerleg_left_back_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170231;
+    }
+    lowerleg_left_front_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170031;
+    }
+    lowerleg_right_back_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170226;
+    }
+    lowerleg_right_front_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170225;
+    }
+    upperarm_left_back_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170219;
+    }
+    upperarm_left_front_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170218;
+    }
+    upperarm_right_back_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170214;
+    }
+    upperarm_right_front_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170213;
+    }
+    forearm_left_back_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170221;
+    }
+    forearm_left_front_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170021;
+    }
+    forearm_right_back_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170216;
+    }
+    forearm_right_front_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170215;
+    }
+    foot_left_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170232;
+    }
+    foot_right_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170227;
+    }
+    hand_left_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170222;
+    }
+    hand_right_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170217;
+    }
+    neck_back_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170204;
+    }
+    neck_front_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170203;
+    }
+    face_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170201;
+    }
+    head_Object01
+    {
+        type            fixedValue;
+        value           uniform 0.000170202;
+    }
+}
+
+// ************************************************************************* //

@@ -1,0 +1,51 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.2.x-1ef4d132e582
+Exec   : createPatch -overwrite
+Date   : Dec 13 2017
+Time   : 15:27:16
+Host   : "queen01"
+PID    : 5246
+Case   : /home/tyou/OpenFOAM/tyou-2.2.x/run/test13b
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Disallowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading createPatchDict
+
+Adding new patch inlet as patch 6 from 
+{
+    type            patch;
+}
+
+Adding new patch outlet as patch 7 from 
+{
+    type            patch;
+}
+
+
+Read 270 faces from faceSet inlet
+Read 189 faces from faceSet outlet
+
+Doing topology modification to order faces.
+
+Not synchronising points.
+
+Removing patches with no faces in them.
+
+No patches removed.
+Writing repatched mesh to 0
+
+End
+

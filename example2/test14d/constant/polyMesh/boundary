@@ -1,0 +1,268 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+41
+(
+    floor
+    {
+        type            wall;
+        nFaces          1600;
+        startFace       195432;
+    }
+    ceiling
+    {
+        type            wall;
+        nFaces          1600;
+        startFace       197032;
+    }
+    north
+    {
+        type            wall;
+        nFaces          771;
+        startFace       198632;
+    }
+    south
+    {
+        type            wall;
+        nFaces          960;
+        startFace       199403;
+    }
+    east
+    {
+        type            wall;
+        nFaces          960;
+        startFace       200363;
+    }
+    west
+    {
+        type            wall;
+        nFaces          690;
+        startFace       201323;
+    }
+    inlet
+    {
+        type            patch;
+        nFaces          270;
+        startFace       202013;
+    }
+    outlet
+    {
+        type            patch;
+        nFaces          189;
+        startFace       202283;
+    }
+    back_left_Object01
+    {
+        type            wall;
+        nFaces          96;
+        startFace       202472;
+    }
+    back_right_Object01
+    {
+        type            wall;
+        nFaces          106;
+        startFace       202568;
+    }
+    chest_left_Object01
+    {
+        type            wall;
+        nFaces          115;
+        startFace       202674;
+    }
+    chest_right_Object01
+    {
+        type            wall;
+        nFaces          104;
+        startFace       202789;
+    }
+    waist_left_back_Object01
+    {
+        type            wall;
+        nFaces          59;
+        startFace       202893;
+    }
+    waist_left_front_Object01
+    {
+        type            wall;
+        nFaces          56;
+        startFace       202952;
+    }
+    waist_right_back_Object01
+    {
+        type            wall;
+        nFaces          59;
+        startFace       203008;
+    }
+    waist_right_front_Object01
+    {
+        type            wall;
+        nFaces          54;
+        startFace       203067;
+    }
+    femur_left_back_Object01
+    {
+        type            wall;
+        nFaces          134;
+        startFace       203121;
+    }
+    femur_left_front_Object01
+    {
+        type            wall;
+        nFaces          140;
+        startFace       203255;
+    }
+    femur_right_back_Object01
+    {
+        type            wall;
+        nFaces          130;
+        startFace       203395;
+    }
+    femur_right_front_Object01
+    {
+        type            wall;
+        nFaces          141;
+        startFace       203525;
+    }
+    lowerleg_left_back_Object01
+    {
+        type            wall;
+        nFaces          101;
+        startFace       203666;
+    }
+    lowerleg_left_front_Object01
+    {
+        type            wall;
+        nFaces          97;
+        startFace       203767;
+    }
+    lowerleg_right_back_Object01
+    {
+        type            wall;
+        nFaces          91;
+        startFace       203864;
+    }
+    lowerleg_right_front_Object01
+    {
+        type            wall;
+        nFaces          111;
+        startFace       203955;
+    }
+    upperarm_left_back_Object01
+    {
+        type            wall;
+        nFaces          64;
+        startFace       204066;
+    }
+    upperarm_left_front_Object01
+    {
+        type            wall;
+        nFaces          53;
+        startFace       204130;
+    }
+    upperarm_right_back_Object01
+    {
+        type            wall;
+        nFaces          63;
+        startFace       204183;
+    }
+    upperarm_right_front_Object01
+    {
+        type            wall;
+        nFaces          54;
+        startFace       204246;
+    }
+    forearm_left_back_Object01
+    {
+        type            wall;
+        nFaces          52;
+        startFace       204300;
+    }
+    forearm_left_front_Object01
+    {
+        type            wall;
+        nFaces          39;
+        startFace       204352;
+    }
+    forearm_right_back_Object01
+    {
+        type            wall;
+        nFaces          49;
+        startFace       204391;
+    }
+    forearm_right_front_Object01
+    {
+        type            wall;
+        nFaces          41;
+        startFace       204440;
+    }
+    foot_left_Object01
+    {
+        type            wall;
+        nFaces          75;
+        startFace       204481;
+    }
+    foot_right_Object01
+    {
+        type            wall;
+        nFaces          78;
+        startFace       204556;
+    }
+    hand_left_Object01
+    {
+        type            wall;
+        nFaces          61;
+        startFace       204634;
+    }
+    hand_right_Object01
+    {
+        type            wall;
+        nFaces          60;
+        startFace       204695;
+    }
+    neck_back_Object01
+    {
+        type            wall;
+        nFaces          14;
+        startFace       204755;
+    }
+    neck_front_Object01
+    {
+        type            wall;
+        nFaces          20;
+        startFace       204769;
+    }
+    face_Object01
+    {
+        type            wall;
+        nFaces          53;
+        startFace       204789;
+    }
+    head_Object01
+    {
+        type            wall;
+        nFaces          120;
+        startFace       204842;
+    }
+    bed_bed
+    {
+        type            wall;
+        nFaces          3092;
+        startFace       204962;
+    }
+)
+
+// ************************************************************************* //

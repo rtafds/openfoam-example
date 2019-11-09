@@ -1,0 +1,292 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      sampleDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+setFormat foamFormat;
+
+surfaceFormat foamFile;
+
+formatOptions
+{
+    ensight
+    {
+        format  ascii;
+    }
+}
+
+interpolationScheme cellPoint;
+
+fields
+(
+    T
+);
+
+sets
+(
+);
+
+
+surfaces
+(
+    floor
+    {
+        type            patch;
+        patches         ( floor );
+    }
+
+    ceiling
+    {
+        type            patch;
+        patches         ( ceiling );
+    }
+
+    north
+    {
+        type            patch;
+        patches         ( north );
+    }
+
+    south
+    {
+        type            patch;
+        patches         ( south );
+    }
+
+    east
+    {
+        type            patch;
+        patches         ( east );
+    }
+
+    west
+    {
+        type            patch;
+        patches         ( west );
+    }
+
+    inlet
+    {
+        type            patch;
+        patches         ( inlet );
+    }
+
+    outlet
+    {
+        type            patch;
+        patches         ( outlet );
+    }
+
+
+    back_left
+    {
+        type            patch;
+        patches         ( back_left_Object01 );
+    }
+
+    bed
+    {
+        type            patch;
+        patches         ( bed_bed );
+    }
+
+    back_right
+    {
+        type            patch;
+        patches         ( back_right_Object01 );
+    }
+
+    chest_left
+    {
+        type            patch;
+        patches         ( chest_left_Object01 );
+    }
+
+    chest_right
+    {
+        type            patch;
+        patches         ( chest_right_Object01 );
+    }
+
+    waist_left_back
+    {
+        type            patch;
+        patches         ( waist_left_back_Object01 );
+    }
+
+    waist_left_front
+    {
+        type            patch;
+        patches         ( waist_left_front_Object01 );
+    }
+
+    waist_right_back
+    {
+        type            patch;
+        patches         ( waist_right_back_Object01 );
+    }
+
+    waist_right_front
+    {
+        type            patch;
+        patches         ( waist_right_front_Object01 );
+    }
+
+    femur_left_back
+    {
+        type            patch;
+        patches         ( femur_left_back_Object01 );
+    }
+
+    femur_left_front
+    {
+        type            patch;
+        patches         ( femur_left_front_Object01 );
+    }
+
+    femur_right_back
+    {
+        type            patch;
+        patches         ( femur_right_back_Object01 );
+    }
+
+    femur_right_front
+    {
+        type            patch;
+        patches         ( femur_right_front_Object01 );
+    }
+
+    lowerleg_left_back
+    {
+        type            patch;
+        patches         ( lowerleg_left_back_Object01 );
+    }
+
+    lowerleg_left_front
+    {
+        type            patch;
+        patches         ( lowerleg_left_front_Object01 );
+    }
+
+    lowerleg_right_back
+    {
+        type            patch;
+        patches         ( lowerleg_right_back_Object01 );
+    }
+
+    lowerleg_right_front
+    {
+        type            patch;
+        patches         ( lowerleg_right_front_Object01 );
+    }
+
+    upperarm_left_front
+    {
+        type            patch;
+        patches         ( upperarm_left_front_Object01 );
+    }
+
+    upperarm_left_back
+    {
+        type            patch;
+        patches         ( upperarm_left_back_Object01 );
+    }
+
+    upperarm_right_back
+    {
+        type            patch;
+        patches         ( upperarm_right_back_Object01 );
+    }
+
+    upperarm_right_front
+    {
+        type            patch;
+        patches         ( upperarm_right_front_Object01 );
+    }
+
+    forearm_left_back
+    {
+        type            patch;
+        patches         ( forearm_left_back_Object01 );
+    }
+
+    forearm_left_front
+    {
+        type            patch;
+        patches         ( forearm_left_front_Object01 );
+    }
+
+    forearm_right_back
+    {
+        type            patch;
+        patches         ( forearm_right_back_Object01 );
+    }
+
+    forearm_right_front
+    {
+        type            patch;
+        patches         ( forearm_right_front_Object01 );
+    }
+
+    foot_left
+    {
+        type            patch;
+        patches         ( foot_left_Object01 );
+    }
+
+    foot_right
+    {
+        type            patch;
+        patches         ( foot_right_Object01 );
+    }
+
+    hand_left
+    {
+        type            patch;
+        patches         ( hand_left_Object01 );
+    }
+
+    hand_right
+    {
+        type            patch;
+        patches         ( hand_right_Object01 );
+    }
+
+    neck_back
+    {
+        type            patch;
+        patches         ( neck_back_Object01 );
+    }
+
+    neck_front
+    {
+        type            patch;
+        patches         ( neck_front_Object01 );
+    }
+
+    face
+    {
+        type            patch;
+        patches         ( face_Object01 );
+    }
+
+    head
+    {
+        type            patch;
+        patches         ( head_Object01 );
+    }
+
+);
+
+// *********************************************************************** //

@@ -1,0 +1,480 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      surfaceFeatureExtractDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+bed.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+back_left.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+back_right.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+chest_left.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+chest_right.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+waist_left_back.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+waist_left_front.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+waist_right_back.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+waist_right_front.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+femur_left_back.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+femur_left_front.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+femur_right_back.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+femur_right_front.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+lowerleg_left_back.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+lowerleg_left_front.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+lowerleg_right_back.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+lowerleg_right_front.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+upperarm_left_back.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+upperarm_left_front.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+upperarm_right_back.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+upperarm_right_front.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+forearm_left_back.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+forearm_left_front.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+forearm_right_back.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+forearm_right_front.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+foot_left.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+foot_right.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+hand_left.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+hand_right.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+neck_back.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+neck_front.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+face.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+head.stl
+{
+
+    extractionMethod    extractFromSurface;
+
+    extractFromSurfaceCoeffs
+    {
+
+        includedAngle   150;
+    }
+
+        writeObj                yes;
+}
+
+
+

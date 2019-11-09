@@ -1,0 +1,4 @@
+# Source : cellZone femur_left_front_T
+# Cells  : 521
+# Time	sum(V)	volAverage(T)	volAverage(X)	volAverage(p)	volAverage(Qr)
+600	0.0080937	302.023	0.00877868	100040	0

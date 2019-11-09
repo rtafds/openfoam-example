@@ -1,0 +1,112 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    "rho.*"
+    {
+        solver          GAMG;
+	smoother	FDIC;
+	agglomerator	faceAreaPair;
+	nCellsInCoarsestLevels	10;
+	mergeLevel	1;
+        cacheAgglomeration on;
+	tolerance	0;
+	relTol		0;
+
+    }
+
+    p_rgh
+    {
+	solver          GAMG;
+        smoother        FDIC;
+        agglomerator    faceAreaPair;
+        nCellsInCoarsestLevel 10;
+        mergeLevels     1;
+        nPreSweeps      0;
+        nPostSweeps     1;
+        maxPreSweeps    2;
+        maxPostSweeps   2;
+        nFinestSweeps   2;
+        preSweepsLevelMultiplier 1;
+        postSweepsLevelMultiplier 1;
+        scaleCorrection true;
+        directSolveCoarsest false;
+        cacheAgglomeration on;
+        tolerance       1e-06;
+        relTol          0.01;
+    }
+
+    p_rghFinal
+    {
+        $p_rgh;
+        relTol          0;
+    }
+
+    U
+    {
+	type            coupled;
+        solver          PBiCICG;
+        preconditioner  DILU;
+        tolerance       (1e-05 1e-05 1e-05);
+        relTol          (0.1 0.1 0.1);
+    }
+
+    UFinal
+    {
+        $U;
+        relTol          (0 0 0);
+    }
+
+    "(e|k|epsilon|h|X)"
+    {
+        solver          smoothSolver;
+        smoother        DILU;
+        tolerance       1e-05;
+        relTol          0.1;
+    }
+    "(e|k|epsilon|h|X)Final"
+    {
+        $e;
+        relTol          0;
+    }
+
+    Ii
+    {
+        solver          smoothSolver;
+        smoother        DILU;
+        tolerance       1e-3;
+        relTol          0.1;
+    }
+
+    IiFinal
+    {
+        $e;
+        relTol          0;
+    }
+
+}
+
+PIMPLE
+{
+    momentumPredictor yes;
+    nOuterCorrectors 1;
+    nCorrectors     2;
+    nNonOrthogonalCorrectors 0;
+}
+
+// ************************************************************************* //

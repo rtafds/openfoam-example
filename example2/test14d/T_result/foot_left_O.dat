@@ -1,0 +1,4 @@
+# Source : patch foot_left_Object01
+# Faces  : 75
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	0.0388997	309.112	1.89541e-05	100040	-38.514

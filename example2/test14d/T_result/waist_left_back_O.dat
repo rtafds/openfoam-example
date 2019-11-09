@@ -1,0 +1,4 @@
+# Source : patch waist_left_back_Object01
+# Faces  : 59
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	0.0383925	306.043	4.21364e-05	100042	-13.9193

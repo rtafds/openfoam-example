@@ -1,0 +1,4 @@
+# Source : cellZone chest_left_T
+# Cells  : 883
+# Time	sum(V)	volAverage(T)	volAverage(X)	volAverage(p)	volAverage(Qr)
+600	0.0138002	301.91	0.00967626	100040	0

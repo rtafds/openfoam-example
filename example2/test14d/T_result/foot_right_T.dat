@@ -1,0 +1,4 @@
+# Source : cellZone foot_right_T
+# Cells  : 119
+# Time	sum(V)	volAverage(T)	volAverage(X)	volAverage(p)	volAverage(Qr)
+600	0.00181311	301.443	0.0108603	100040	0

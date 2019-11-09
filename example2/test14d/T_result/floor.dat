@@ -1,0 +1,4 @@
+# Source : patch floor
+# Faces  : 1600
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	16	300.776	0	100046	4.64395

@@ -1,0 +1,4 @@
+# Source : cellZone w_internal_T
+# Cells  : 64441
+# Time	sum(V)	volAverage(T)	volAverage(X)	volAverage(p)	volAverage(Qr)
+600	36.1515	301.128	0.0123677	100032	0

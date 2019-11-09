@@ -1,0 +1,51 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.2.x-1ef4d132e582
+Exec   : refineMesh -dict system/refineMeshDict1 -overwrite
+Date   : Dec 13 2017
+Time   : 15:27:18
+Host   : "queen01"
+PID    : 5249
+Case   : /home/tyou/OpenFOAM/tyou-2.2.x/run/test13b
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Disallowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Mesh edge statistics:
+    x aligned :  number:52568	minLen:0.05	maxLen:0.1
+    y aligned :  number:51528	minLen:0.05	maxLen:0.1
+    z aligned :  number:52739	minLen:0.05	maxLen:0.1
+    other     :  number:0	minLen:1e+15	maxLen:-1e+15
+
+Refining according to refineMeshDict
+
+Read 3264 cells from cellSet "constant/polyMesh/sets/refineCell1"
+
+Global Coordinate system:
+     normal : (0 0 1)
+     tan1   : (1 0 0)
+     tan2   : (0 1 0)
+
+Writing refined cells (26112) to cellSet "constant/polyMesh/sets/refinedCells"
+
+Writing map from new to old cell to "/home/tyou/OpenFOAM/tyou-2.2.x/run/test13b/0/polyMesh/cellMap"
+
+Mesh edge statistics:
+    x aligned :  number:76940	minLen:0.025	maxLen:0.1
+    y aligned :  number:75488	minLen:0.025	maxLen:0.1
+    z aligned :  number:77661	minLen:0.025	maxLen:0.1
+    other     :  number:0	minLen:1e+15	maxLen:-1e+15
+
+End
+

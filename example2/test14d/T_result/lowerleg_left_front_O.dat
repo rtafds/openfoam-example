@@ -1,0 +1,4 @@
+# Source : patch lowerleg_left_front_Object01
+# Faces  : 97
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	0.0564815	306.53	2.02473e-05	100040	-25.0804

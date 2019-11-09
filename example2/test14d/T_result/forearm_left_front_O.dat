@@ -1,0 +1,4 @@
+# Source : patch forearm_left_front_Object01
+# Faces  : 39
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	0.0209756	310.352	2.34675e-05	100041	-39.8768

@@ -1,0 +1,80 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    inlet
+    {
+        type            fixedValue;
+        value           uniform (-0.5 0 0);
+    }
+    outlet
+    {
+        type            zeroGradient;
+    }
+
+    "(floor|ceiling|east|west|north|south|desk|bed_bed)"
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    "(back_left_Object01|back_right_Object01|chest_left_Object01|chest_right_Object01)"
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    "(waist_left_back_Object01|waist_left_front_Object01|waist_right_back_Object01|waist_right_front_Object01)"
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    "(femur_left_back_Object01|femur_left_front_Object01|femur_right_back_Object01|femur_right_front_Object01)"
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    "(lowerleg_left_back_Object01|lowerleg_left_front_Object01|lowerleg_right_back_Object01|lowerleg_right_front_Object01)"
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    "(upperarm_left_back_Object01|upperarm_left_front_Object01|upperarm_right_back_Object01|upperarm_right_front_Object01)"
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    "(forearm_left_back_Object01|forearm_left_front_Object01|forearm_right_back_Object01|forearm_right_front_Object01)"
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    "(foot_left_Object01|foot_right_Object01|hand_left_Object01|hand_right_Object01)"
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    "(neck_back_Object01|neck_front_Object01|face_Object01|head_Object01)"
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+}
+
+// ************************************************************************* //

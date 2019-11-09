@@ -1,0 +1,43 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.2.x-1ef4d132e582
+Exec   : setSet -constant
+Date   : Dec 13 2017
+Time   : 15:27:18
+Host   : "queen01"
+PID    : 5248
+Case   : /home/tyou/OpenFOAM/tyou-2.2.x/run/test13b
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Disallowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = constant
+
+Time:constant  cells:48984  faces:151822  points:53998  patches:8  bb:(0 1.62 -2) (4 4.02 2)
+cellSets:
+	refinedCells	size:12096
+	refineCell2	size:1512
+faceSets:
+	outlet	size:189
+	inlet	size:270
+
+Time = constant
+    mesh not changed.
+Please type 'help', 'quit' or a set command after prompt.
+Command>    Set:refineCell1  Size:0  Action:new
+    Adding cells with center within boxes 1((1.499 3.279 -0.001) (2.101 3.721 1.701))
+    Writing refineCell1 (size 3264) to "constant/polyMesh/sets/refineCell1" and to vtk file "VTK/refineCell1/refineCell1_0.vtk"
+
+Command>Quitting ...
+
+End
+

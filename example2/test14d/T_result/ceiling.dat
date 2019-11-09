@@ -1,0 +1,4 @@
+# Source : patch ceiling
+# Faces  : 1600
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	16	301.099	0	100019	1.80323

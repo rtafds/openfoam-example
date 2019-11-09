@@ -1,0 +1,4 @@
+# Source : cellZone face_T
+# Cells  : 209
+# Time	sum(V)	volAverage(T)	volAverage(X)	volAverage(p)	volAverage(Qr)
+210	0.00323678	301.346	0.0105087	100039	0

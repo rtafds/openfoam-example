@@ -1,0 +1,4 @@
+# Source : cellZone upperarm_left_front_T
+# Cells  : 576
+# Time	sum(V)	volAverage(T)	volAverage(X)	volAverage(p)	volAverage(Qr)
+600	0.00910935	301.302	0.0103818	100040	0

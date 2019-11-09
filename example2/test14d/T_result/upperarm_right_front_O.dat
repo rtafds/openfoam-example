@@ -1,0 +1,4 @@
+# Source : patch upperarm_right_front_Object01
+# Faces  : 54
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	0.0310832	311.205	2.35067e-05	100041	-43.7983

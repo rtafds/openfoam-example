@@ -1,0 +1,4 @@
+# Source : patch north
+# Faces  : 771
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	7.71	301.389	0	100032	-0.395856

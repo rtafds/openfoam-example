@@ -1,0 +1,4 @@
+# Source : patch face_Object01
+# Faces  : 53
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+390	0.0263509	309.208	4.43039e-05	100039	-37.9705

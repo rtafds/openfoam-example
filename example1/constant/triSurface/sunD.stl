@@ -1,0 +1,51 @@
+solid sunD
+facet normal 0.0 0.0 -1.0
+  outer loop
+    vertex 1.1 0.2 0.0
+    vertex 2.0 1.1 0.0
+    vertex 2.8999999999999995 0.2 0.0
+  endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+  outer loop
+    vertex 2.0 1.1 0.0
+    vertex 1.1 0.2 0.0
+    vertex 1.9999999999999996 1.519999999999999 0.0
+  endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+  outer loop
+    vertex 2.8999999999999995 0.2 0.0
+    vertex 2.0 1.1 0.0
+    vertex 2.9 1.1 0.0
+  endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+  outer loop
+    vertex 2.8999999999999995 0.2 0.0
+    vertex 2.9 1.1 0.0
+    vertex 4.0 1.8133333333333317 0.0
+  endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+  outer loop
+    vertex 4.0 1.8133333333333317 0.0
+    vertex 2.9 1.1 0.0
+    vertex 3.786363636363636 2.4 0.0
+  endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+  outer loop
+    vertex 4.0 1.8133333333333317 0.0
+    vertex 3.786363636363636 2.4 0.0
+    vertex 4.0 2.4 0.0
+  endloop
+endfacet
+facet normal -1.0 0.0 0.0
+  outer loop
+    vertex 4.0 2.4 0.0
+    vertex 4.0 1.8133333333333317 0.0
+    vertex 4.0 2.4 0.3899999999999994
+  endloop
+endfacet
+endsolid sunD

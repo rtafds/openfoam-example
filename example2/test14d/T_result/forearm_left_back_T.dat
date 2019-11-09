@@ -1,0 +1,4 @@
+# Source : cellZone forearm_left_back_T
+# Cells  : 202
+# Time	sum(V)	volAverage(T)	volAverage(X)	volAverage(p)	volAverage(Qr)
+600	0.00301647	301.894	0.0086083	100042	0

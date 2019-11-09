@@ -1,0 +1,203 @@
+    inlet
+    {
+        type            uniformFixedValue;
+        uniformValue    csvFile;
+        csvFileCeoffs
+        {
+            nHeaderLine     1;
+            refColumn       0;
+            componentColumns (2 3 4);
+            separator       ",";
+            mergeSeparators yes;
+            fileName        "$FOAM_CASE/velocity.csv";
+        }
+    }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    eastwindow
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    westwindow
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    Lsouthwindow
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    Leastwindow
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    back_left_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    back_right_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    chest_left_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    chest_right_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    waist_left_back_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    waist_left_front_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    waist_right_back_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    waist_right_front_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    femur_left_back_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    femur_left_front_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    femur_right_back_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    femur_right_front_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    lowerleg_left_back_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    lowerleg_left_front_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    lowerleg_right_back_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    lowerleg_right_front_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    upperarm_left_back_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    upperarm_left_front_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    upperarm_right_back_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    upperarm_right_front_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    forearm_left_back_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    forearm_left_front_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    forearm_right_back_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    forearm_right_front_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    foot_left_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    foot_right_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    hand_left_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    hand_right_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    neck_back_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    neck_front_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    face_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    head_Object01
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+}
+
+
+// ************************************************************************* //
+

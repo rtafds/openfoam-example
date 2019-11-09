@@ -1,0 +1,4 @@
+execFlowFunctionObjectsforHumidRad.C
+
+EXE = $(FOAM_APPBIN)/execFlowFunctionObjectsforHumidRad
+

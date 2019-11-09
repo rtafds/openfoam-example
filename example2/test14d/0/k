@@ -1,0 +1,83 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      k;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -2 0 0 0 0];
+
+internalField   uniform 0.1;
+
+boundaryField
+{
+    inlet
+    {
+        type        	turbulentIntensityKineticEnergyInlet;
+        intensity   	0.10;           
+        value       	$internalField; 
+    }
+    outlet
+    {
+        type            zeroGradient;
+    }
+
+    "(floor|ceiling|east|west|north|south|desk|bed_bed)"
+    {
+        type            compressible::kqRWallFunction;
+        value           $internalField; 
+    }
+    "(back_left_Object01|back_right_Object01|chest_left_Object01|chest_right_Object01)"
+    {
+        type            compressible::kqRWallFunction;
+        value           $internalField;
+    }
+    "(waist_left_back_Object01|waist_left_front_Object01|waist_right_back_Object01|waist_right_front_Object01)"
+    {
+        type            compressible::kqRWallFunction;
+        value           $internalField;
+    }
+    "(femur_left_back_Object01|femur_left_front_Object01|femur_right_back_Object01|femur_right_front_Object01)"
+    {
+        type            compressible::kqRWallFunction;
+        value           $internalField;
+    }
+    "(lowerleg_left_back_Object01|lowerleg_left_front_Object01|lowerleg_right_back_Object01|lowerleg_right_front_Object01)"
+    {
+        type            compressible::kqRWallFunction;
+        value           $internalField;
+    }
+    "(upperarm_left_back_Object01|upperarm_left_front_Object01|upperarm_right_back_Object01|upperarm_right_front_Object01)"
+    {
+        type            compressible::kqRWallFunction;
+        value           $internalField;
+    }
+    "(forearm_left_back_Object01|forearm_left_front_Object01|forearm_right_back_Object01|forearm_right_front_Object01)"
+    {
+        type            compressible::kqRWallFunction;
+        value           $internalField;
+    }
+    "(foot_left_Object01|foot_right_Object01|hand_left_Object01|hand_right_Object01)"
+    {
+        type            compressible::kqRWallFunction;
+        value           $internalField;
+    }
+    "(neck_back_Object01|neck_front_Object01|face_Object01|head_Object01)"
+    {
+        type            compressible::kqRWallFunction;
+        value           $internalField;
+    }
+}
+
+
+// ************************************************************************* //

@@ -1,0 +1,4 @@
+# Source : patch femur_right_front_Object01
+# Faces  : 141
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	0.0847977	306.399	2.23548e-05	100040	-21.1495

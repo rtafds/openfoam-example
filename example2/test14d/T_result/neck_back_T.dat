@@ -1,0 +1,4 @@
+# Source : cellZone neck_back_T
+# Cells  : 61
+# Time	sum(V)	volAverage(T)	volAverage(X)	volAverage(p)	volAverage(Qr)
+600	0.000874303	301.751	0.00993331	100041	0

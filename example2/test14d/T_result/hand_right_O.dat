@@ -1,0 +1,4 @@
+# Source : patch hand_right_Object01
+# Faces  : 60
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	0.0259491	311.401	2.70059e-05	100041	-46.3086

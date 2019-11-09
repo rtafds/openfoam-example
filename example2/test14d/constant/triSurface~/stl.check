@@ -1,0 +1,741 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.2.x-0ee7dc546f1b
+Exec   : surfaceCheck humanstand.stl
+Date   : Aug 08 2014
+Time   : 13:46:45
+Host   : "luke01.nagoya-u.ac.jp"
+PID    : 4428
+Case   : /home/hiroki/OpenFOAM/hiroki-2.2.x/run/humanRadiations/humanModel/snappy/1/constant/triSurface
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Disallowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading surface from "humanstand.stl" ...
+
+Statistics:
+Triangles    : 16210
+Vertices     : 8738
+Bounding Box : (1.52723 3.3865 2.49147e-05) (2.07283 3.66618 1.66862)
+
+Region	Size
+------	----
+Object01	16210
+
+
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1906 uses non-unique vertices ((8335 8371 8371) 0) coords:3((1.74866 3.56724 1.58955) (1.74905 3.56767 1.58943) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1911 uses non-unique vertices ((8402 8371 8371) 0) coords:3((1.74885 3.56743 1.5911) (1.74905 3.56767 1.58943) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1912 uses non-unique vertices ((8371 8335 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74866 3.56724 1.58955) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1919 uses non-unique vertices ((8371 8347 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74874 3.56734 1.58971) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1921 uses non-unique vertices ((8371 8349 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74876 3.56736 1.58977) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1923 uses non-unique vertices ((8371 8350 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74876 3.56736 1.58978) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1925 uses non-unique vertices ((8371 8351 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74876 3.56737 1.58979) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1927 uses non-unique vertices ((8371 8352 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74876 3.56737 1.58979) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1929 uses non-unique vertices ((8371 8353 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74876 3.56737 1.58979) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1931 uses non-unique vertices ((8371 8354 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74876 3.56736 1.58979) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1933 uses non-unique vertices ((8371 8358 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74876 3.56736 1.5898) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1935 uses non-unique vertices ((8371 8355 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74876 3.56736 1.5898) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1937 uses non-unique vertices ((8371 8357 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74876 3.56736 1.58981) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1939 uses non-unique vertices ((8371 8356 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74876 3.56736 1.58981) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1941 uses non-unique vertices ((8371 8359 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74877 3.56736 1.58981) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1943 uses non-unique vertices ((8371 8360 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74877 3.56736 1.58982) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1945 uses non-unique vertices ((8371 8361 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74878 3.56737 1.58987) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1947 uses non-unique vertices ((8371 8363 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.7488 3.56739 1.58994) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1949 uses non-unique vertices ((8371 8365 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74882 3.56742 1.59) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1951 uses non-unique vertices ((8371 8366 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74884 3.56743 1.59003) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1953 uses non-unique vertices ((8371 8368 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74885 3.56743 1.59006) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1955 uses non-unique vertices ((8371 8369 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74886 3.56744 1.59009) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1957 uses non-unique vertices ((8371 8372 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74887 3.56745 1.59012) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1959 uses non-unique vertices ((8371 8373 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74888 3.56746 1.59013) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1961 uses non-unique vertices ((8371 8374 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74888 3.56746 1.59013) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1963 uses non-unique vertices ((8371 8375 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74888 3.56746 1.59014) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1965 uses non-unique vertices ((8371 8376 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74888 3.56746 1.59015) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1967 uses non-unique vertices ((8371 8377 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74889 3.56745 1.59017) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1969 uses non-unique vertices ((8371 8378 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.7489 3.56745 1.59018) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1971 uses non-unique vertices ((8371 8380 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.7489 3.56745 1.59019) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1973 uses non-unique vertices ((8371 8381 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.7489 3.56745 1.59019) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1975 uses non-unique vertices ((8371 8382 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74891 3.56745 1.5902) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 1977 uses non-unique vertices ((8371 8383 8371) 0) coords:3((1.74905 3.56767 1.58943) (1.74891 3.56746 1.59021) (1.74905 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2298 uses non-unique vertices ((5469 5495 5495) 0) coords:3((1.79984 3.4074 1.51337) (1.8 3.40744 1.5134) (1.8 3.40744 1.5134))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2300 uses non-unique vertices ((5495 5484 5495) 0) coords:3((1.8 3.40744 1.5134) (1.79987 3.40745 1.51343) (1.8 3.40744 1.5134))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2315 uses non-unique vertices ((5476 5495 5495) 0) coords:3((1.79999 3.40739 1.5133) (1.8 3.40744 1.5134) (1.8 3.40744 1.5134))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2317 uses non-unique vertices ((5495 5468 5495) 0) coords:3((1.8 3.40744 1.5134) (1.79988 3.40738 1.51334) (1.8 3.40744 1.5134))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2551 uses non-unique vertices ((5660 5559 5660) 0) coords:3((1.78739 3.41157 1.52412) (1.78706 3.41003 1.5248) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2561 uses non-unique vertices ((5640 5660 5660) 0) coords:3((1.78722 3.41117 1.52475) (1.78739 3.41157 1.52412) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2562 uses non-unique vertices ((5640 5660 5660) 0) coords:3((1.78722 3.41117 1.52475) (1.78739 3.41157 1.52412) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2565 uses non-unique vertices ((5579 5660 5660) 0) coords:3((1.78706 3.41016 1.52497) (1.78739 3.41157 1.52412) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2567 uses non-unique vertices ((5567 5660 5660) 0) coords:3((1.78706 3.41009 1.52489) (1.78739 3.41157 1.52412) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2568 uses non-unique vertices ((5567 5660 5660) 0) coords:3((1.78706 3.41009 1.52489) (1.78739 3.41157 1.52412) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2571 uses non-unique vertices ((5686 5660 5660) 0) coords:3((1.78716 3.41171 1.52514) (1.78739 3.41157 1.52412) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2572 uses non-unique vertices ((5660 5642 5660) 0) coords:3((1.78739 3.41157 1.52412) (1.78722 3.41118 1.52476) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2574 uses non-unique vertices ((5660 5644 5660) 0) coords:3((1.78739 3.41157 1.52412) (1.78722 3.41119 1.52476) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2576 uses non-unique vertices ((5660 5648 5660) 0) coords:3((1.78739 3.41157 1.52412) (1.78722 3.41121 1.52477) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2578 uses non-unique vertices ((5660 5651 5660) 0) coords:3((1.78739 3.41157 1.52412) (1.78722 3.41125 1.5248) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2580 uses non-unique vertices ((5660 5667 5660) 0) coords:3((1.78739 3.41157 1.52412) (1.78718 3.41145 1.52497) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2582 uses non-unique vertices ((5660 5682 5660) 0) coords:3((1.78739 3.41157 1.52412) (1.78717 3.41165 1.52507) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2584 uses non-unique vertices ((5660 5683 5660) 0) coords:3((1.78739 3.41157 1.52412) (1.78716 3.41169 1.5251) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 2987 uses non-unique vertices ((5638 5660 5660) 0) coords:3((1.78885 3.41055 1.52409) (1.78739 3.41157 1.52412) (1.78739 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 103
+    triangle 7144 vertices ((1329 1597 1552) 0) has the same vertices as triangle 8278 vertices ((1597 1329 1552) 0) coords:3((1.68504 3.57964 0.000107765) (1.69382 3.58707 0.00142634) (1.6941 3.58463 0.000163317))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 103
+    triangle 7160 vertices ((1659 1648 1762) 0) has the same vertices as triangle 8277 vertices ((1648 1659 1762) 0) coords:3((1.69329 3.59179 0.00590372) (1.68758 3.59381 0.0138876) (1.69286 3.59618 0.0133927))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 8527 uses non-unique vertices ((1441 1552 1552) 0) coords:3((1.69096 3.58329 5.38826e-05) (1.6941 3.58463 0.000163317) (1.6941 3.58463 0.000163317))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 8528 uses non-unique vertices ((1552 1571 1552) 0) coords:3((1.6941 3.58463 0.000163317) (1.69834 3.58375 0.000140071) (1.6941 3.58463 0.000163317))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10253 uses non-unique vertices ((8662 8636 8636) 0) coords:3((1.85117 3.56742 1.59) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10254 uses non-unique vertices ((8636 8655 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.8512 3.56739 1.58994) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10257 uses non-unique vertices ((8666 8636 8636) 0) coords:3((1.85116 3.56743 1.59003) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10259 uses non-unique vertices ((8667 8636 8636) 0) coords:3((1.85115 3.56743 1.59006) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10261 uses non-unique vertices ((8668 8636 8636) 0) coords:3((1.85114 3.56744 1.59009) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10263 uses non-unique vertices ((8669 8636 8636) 0) coords:3((1.85113 3.56745 1.59012) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10265 uses non-unique vertices ((8670 8636 8636) 0) coords:3((1.85113 3.56746 1.59013) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10267 uses non-unique vertices ((8671 8636 8636) 0) coords:3((1.85112 3.56746 1.59013) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10269 uses non-unique vertices ((8676 8636 8636) 0) coords:3((1.85112 3.56746 1.59014) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10271 uses non-unique vertices ((8675 8636 8636) 0) coords:3((1.85112 3.56746 1.59015) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10273 uses non-unique vertices ((8673 8636 8636) 0) coords:3((1.85111 3.56745 1.59017) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10275 uses non-unique vertices ((8672 8636 8636) 0) coords:3((1.8511 3.56745 1.59018) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10277 uses non-unique vertices ((8674 8636 8636) 0) coords:3((1.8511 3.56745 1.59019) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10279 uses non-unique vertices ((8677 8636 8636) 0) coords:3((1.8511 3.56745 1.59019) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10281 uses non-unique vertices ((8678 8636 8636) 0) coords:3((1.85109 3.56745 1.5902) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10283 uses non-unique vertices ((8679 8636 8636) 0) coords:3((1.85109 3.56746 1.59021) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10285 uses non-unique vertices ((8681 8636 8636) 0) coords:3((1.85108 3.56747 1.59022) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10286 uses non-unique vertices ((8681 8636 8636) 0) coords:3((1.85108 3.56747 1.59022) (1.85096 3.56767 1.58943) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10287 uses non-unique vertices ((8636 8651 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85122 3.56737 1.58987) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10289 uses non-unique vertices ((8636 8647 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85123 3.56736 1.58982) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10291 uses non-unique vertices ((8636 8646 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85123 3.56736 1.58981) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10293 uses non-unique vertices ((8636 8640 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85123 3.56736 1.58981) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10295 uses non-unique vertices ((8636 8643 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85124 3.56736 1.58981) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10297 uses non-unique vertices ((8636 8642 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85124 3.56736 1.5898) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10299 uses non-unique vertices ((8636 8645 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85124 3.56736 1.5898) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10301 uses non-unique vertices ((8636 8644 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85124 3.56736 1.58979) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10303 uses non-unique vertices ((8636 8641 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85124 3.56737 1.58979) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10305 uses non-unique vertices ((8636 8639 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85124 3.56737 1.58979) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10307 uses non-unique vertices ((8636 8638 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85124 3.56737 1.58979) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10309 uses non-unique vertices ((8636 8637 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85124 3.56736 1.58978) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10311 uses non-unique vertices ((8636 8635 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85124 3.56736 1.58977) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10313 uses non-unique vertices ((8636 8634 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85126 3.56734 1.58971) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10315 uses non-unique vertices ((8636 8630 8636) 0) coords:3((1.85096 3.56767 1.58943) (1.85134 3.56724 1.58955) (1.85096 3.56767 1.58943))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10552 uses non-unique vertices ((5495 5476 5495) 0) coords:3((1.8 3.40744 1.5134) (1.79999 3.40739 1.5133) (1.8 3.40744 1.5134))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10559 uses non-unique vertices ((5498 5495 5495) 0) coords:3((1.80016 3.4074 1.51337) (1.8 3.40744 1.5134) (1.8 3.40744 1.5134))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10563 uses non-unique vertices ((5479 5495 5495) 0) coords:3((1.80011 3.40736 1.51331) (1.8 3.40744 1.5134) (1.8 3.40744 1.5134))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10576 uses non-unique vertices ((5506 5495 5495) 0) coords:3((1.80014 3.40745 1.51343) (1.8 3.40744 1.5134) (1.8 3.40744 1.5134))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10819 uses non-unique vertices ((6421 6451 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81284 3.4117 1.52512) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10821 uses non-unique vertices ((6421 6448 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81284 3.41169 1.5251) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10822 uses non-unique vertices ((6421 6448 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81284 3.41169 1.5251) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10824 uses non-unique vertices ((6421 6445 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81283 3.41165 1.52507) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10825 uses non-unique vertices ((6421 6445 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81283 3.41165 1.52507) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10826 uses non-unique vertices ((6421 6445 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81283 3.41165 1.52507) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10827 uses non-unique vertices ((6421 6445 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81283 3.41165 1.52507) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10829 uses non-unique vertices ((6421 6437 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81282 3.41145 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10830 uses non-unique vertices ((6421 6437 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81282 3.41145 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10831 uses non-unique vertices ((6421 6437 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81282 3.41145 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10832 uses non-unique vertices ((6421 6437 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81282 3.41145 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10833 uses non-unique vertices ((6421 6437 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81282 3.41145 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10834 uses non-unique vertices ((6421 6437 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81282 3.41145 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10835 uses non-unique vertices ((6421 6437 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81282 3.41145 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10836 uses non-unique vertices ((6421 6437 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81282 3.41145 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10838 uses non-unique vertices ((6421 6425 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41125 1.5248) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10839 uses non-unique vertices ((6421 6425 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41125 1.5248) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10840 uses non-unique vertices ((6421 6425 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41125 1.5248) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10841 uses non-unique vertices ((6421 6425 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41125 1.5248) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10842 uses non-unique vertices ((6421 6425 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41125 1.5248) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10843 uses non-unique vertices ((6421 6425 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41125 1.5248) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10844 uses non-unique vertices ((6421 6425 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41125 1.5248) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10845 uses non-unique vertices ((6421 6425 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41125 1.5248) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10847 uses non-unique vertices ((6421 6423 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41121 1.52477) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10848 uses non-unique vertices ((6421 6423 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41121 1.52477) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10850 uses non-unique vertices ((6421 6420 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41119 1.52476) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10851 uses non-unique vertices ((6421 6420 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41119 1.52476) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10853 uses non-unique vertices ((6421 6418 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41118 1.52476) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10854 uses non-unique vertices ((6421 6418 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41118 1.52476) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10856 uses non-unique vertices ((6421 6415 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41117 1.52475) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10857 uses non-unique vertices ((6421 6415 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81278 3.41117 1.52475) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10858 uses non-unique vertices ((6351 6421 6421) 0) coords:3((1.81294 3.41003 1.5248) (1.81261 3.41157 1.52412) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10861 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10862 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10863 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10864 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10865 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10866 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10867 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10868 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10869 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10870 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10871 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10872 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10873 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10874 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10875 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10876 uses non-unique vertices ((6421 6388 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81296 3.41038 1.52513) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10878 uses non-unique vertices ((6421 6369 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81294 3.41016 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10879 uses non-unique vertices ((6421 6369 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81294 3.41016 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10880 uses non-unique vertices ((6421 6369 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81294 3.41016 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10881 uses non-unique vertices ((6421 6369 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81294 3.41016 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10882 uses non-unique vertices ((6421 6369 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81294 3.41016 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10883 uses non-unique vertices ((6421 6369 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81294 3.41016 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10884 uses non-unique vertices ((6421 6369 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81294 3.41016 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10885 uses non-unique vertices ((6421 6369 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81294 3.41016 1.52497) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10887 uses non-unique vertices ((6421 6361 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81295 3.41009 1.52489) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10888 uses non-unique vertices ((6421 6361 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81295 3.41009 1.52489) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10889 uses non-unique vertices ((6421 6361 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81295 3.41009 1.52489) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10890 uses non-unique vertices ((6421 6361 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81295 3.41009 1.52489) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10900 uses non-unique vertices ((6421 6361 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81295 3.41009 1.52489) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10901 uses non-unique vertices ((6451 6421 6421) 0) coords:3((1.81284 3.4117 1.52512) (1.81261 3.41157 1.52412) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10902 uses non-unique vertices ((6351 6421 6421) 0) coords:3((1.81294 3.41003 1.5248) (1.81261 3.41157 1.52412) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 10903 uses non-unique vertices ((6421 6361 6421) 0) coords:3((1.81261 3.41157 1.52412) (1.81295 3.41009 1.52489) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 11248 uses non-unique vertices ((6305 6421 6421) 0) coords:3((1.81164 3.41004 1.52442) (1.81261 3.41157 1.52412) (1.81261 3.41157 1.52412))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 14859 uses non-unique vertices ((3775 3822 3822) 0) coords:3((1.90166 3.58376 0.000140071) (1.9059 3.58463 0.000163317) (1.9059 3.58463 0.000163317))
+--> FOAM Warning : 
+    From function validTri(const triSurface&, const label)
+    in file surfaceCheck.C at line 70
+    triangle 14860 uses non-unique vertices ((3822 3828 3822) 0) coords:3((1.9059 3.58463 0.000163317) (1.90904 3.58329 5.38826e-05) (1.9059 3.58463 0.000163317))
+Surface has 160 illegal triangles.
+Dumping conflicting face labels to "illegalFaces"
+Paste this into the input for surfaceSubset
+
+Triangle quality (equilateral=1, collapsed=0):
+    0 .. 0.05  : 0.316101
+    0.05 .. 0.1  : 0.0848242
+    0.1 .. 0.15  : 0.0697101
+    0.15 .. 0.2  : 0.050401
+    0.2 .. 0.25  : 0.0475015
+    0.25 .. 0.3  : 0.0424429
+    0.3 .. 0.35  : 0.0357187
+    0.35 .. 0.4  : 0.0323257
+    0.4 .. 0.45  : 0.0323257
+    0.45 .. 0.5  : 0.0357187
+    0.5 .. 0.55  : 0.0316471
+    0.55 .. 0.6  : 0.0383097
+    0.6 .. 0.65  : 0.035657
+    0.65 .. 0.7  : 0.0284392
+    0.7 .. 0.75  : 0.0287477
+    0.75 .. 0.8  : 0.0268353
+    0.8 .. 0.85  : 0.020111
+    0.85 .. 0.9  : 0.0164713
+    0.9 .. 0.95  : 0.0142505
+    0.95 .. 1  : 0.0124614
+
+    min 0 for triangle 1906
+    max 0.99996 for triangle 13212
+
+--> FOAM Warning : 
+    From function surfaceCheck
+    in file surfaceCheck.C at line 364
+    Minimum triangle quality is 0. This might give problems in self-intersection testing later on.
+Dumping bad quality faces to "badFaces"
+Paste this into the input for surfaceSubset
+
+
+Edges:
+    min 0 for edge 2767 points (1.74905 3.56767 1.58943)(1.74905 3.56767 1.58943)
+    max 0.320785 for edge 11613 points (1.88647 3.56652 0.0916016)(1.86491 3.56035 0.411602)
+
+Checking for points less than 1e-6 of bounding box ((0.545601 0.279671 1.66859) meter) apart.
+    close unconnected points 4882 (1.6718 3.50282 0.411602) and 120 (1.6718 3.50282 0.411602) distance:1.19209e-07
+    close unconnected points 2428 (1.5803 3.54752 0.718119) and 3863 (1.5803 3.54752 0.718118) distance:8.9407e-07
+    close unconnected points 992 (1.73562 3.55712 0.411602) and 79 (1.73562 3.55712 0.411602) distance:1.19209e-07
+    close unconnected points 7264 (1.80044 3.53219 0.795396) and 8342 (1.80044 3.53219 0.795396) distance:9.53674e-07
+    close unconnected points 5328 (1.68616 3.48737 1.26003) and 3972 (1.68616 3.48737 1.26003) distance:9.53674e-07
+    small edge between points 6273 (1.81247 3.4114 1.52414) and 6263 (1.81247 3.4114 1.52414) distance:1.43547e-06
+    small edge between points 6265 (1.81254 3.41149 1.52413) and 6264 (1.81254 3.41149 1.52413) distance:1.3487e-06
+    close unconnected points 3889 (1.65781 3.57911 1.3871) and 2213 (1.65781 3.57911 1.3871) distance:9.53674e-07
+    close unconnected points 6574 (1.85229 3.43736 1.56219) and 2706 (1.85229 3.43736 1.56219) distance:9.53674e-07
+Found 9 nearby points.
+
+Surface is not closed since not all edges connected to two faces:
+    connected to one face : 1844
+    connected to >2 faces : 120
+Conflicting face labels:2940
+Dumping conflicting face labels to "problemFaces"
+Paste this into the input for surfaceSubset
+
+Number of unconnected parts : 6
+Splitting surface into parts ...
+
+writing part 0 size 13015 to "humanstand_0.obj"
+writing part 1 size 691 to "humanstand_1.obj"
+writing part 2 size 3 to "humanstand_2.obj"
+writing part 3 size 800 to "humanstand_3.obj"
+writing part 4 size 1034 to "humanstand_4.obj"
+writing part 5 size 667 to "humanstand_5.obj"

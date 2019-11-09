@@ -1,0 +1,355 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 1 0 0 0];
+
+internalField   uniform 299;
+
+boundaryField
+{
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 303.75;
+    }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    bed_bed
+    {
+        type            fixedValue;
+        value           uniform 303.15;
+    }
+    floor
+    {
+        type          wallHeatTransfer;
+        Tinf          uniform 298; // 外部温度
+        alphaWall     uniform 0.3;   // 熱伝達係数
+        value         uniform 301.15;
+    }
+    ceiling
+    {
+        type          wallHeatTransfer;
+        Tinf          uniform 301.15; // 外部温度
+        alphaWall     uniform 0.35;   // 熱伝達係数
+        value         uniform 301.15;
+    }
+    "(south|east|west)"
+    {
+        type          wallHeatTransfer;
+        Tinf          uniform 301.15; // 外部温度
+        alphaWall     uniform 0.5;   // 熱伝達係数
+        value         uniform 301.15;
+    }
+    north
+    {
+        type            wallHeatTransfer;
+        Tinf            uniform 303.15;
+        alphaWall       uniform 0.3;
+        value           uniform 303.15;
+    }
+    back_left_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0008;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    back_right_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0007;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    chest_left_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0006;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    chest_right_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0005;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    waist_left_back_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0012;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    waist_left_front_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0101;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    waist_right_back_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0011;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    waist_right_front_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0009;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    femur_left_back_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0029;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    femur_left_front_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0028;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    femur_right_back_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0024;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    femur_right_front_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0023;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    lowerleg_left_back_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0031;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    lowerleg_left_front_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0301;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    lowerleg_right_back_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0026;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    lowerleg_right_front_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0025;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    upperarm_left_back_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0019;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    upperarm_left_front_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0018;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    upperarm_right_back_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0014;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    upperarm_right_front_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0013;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    forearm_left_back_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0021;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    forearm_left_front_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0201;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    forearm_right_back_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0016;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    forearm_right_front_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0015;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    foot_left_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0032;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    foot_right_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0027;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    hand_left_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0022;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    hand_right_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0017;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    neck_back_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0004;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    neck_front_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0003;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    face_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0001;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+    head_Object01
+    {
+        type            compressible::turbulentHeatFluxTemperature;
+        heatSource      flux;
+        q               uniform 20.0002;
+        kappa           fluidThermo;
+        kappaName       none;
+        value           uniform 307;
+    }
+}
+
+// ************************************************************************* //

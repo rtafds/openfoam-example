@@ -1,0 +1,50 @@
+#!/bin/sh
+
+./Clean_all
+cp -r 0org 0
+
+echo "blockMesh"
+blockMesh > log.blockMesh
+
+echo "setSet"
+setSet -constant > log.Setset  << EOF
+faceSet inlet new boxToFace (3.999 2.029 -0.901) (4.001 3.531 0.901)
+faceSet outlet new boxToFace (-0.001 1.919 -2.001) (0.901 4.021 -1.999)
+cellSet refineCell2 new boxToCell (1.249 3.279 -0.251) (2.401 3.921 1.801)
+quit
+EOF
+
+echo "createPatch"
+createPatch -overwrite > log.CreatePatch
+
+
+echo "refineMesh"
+refineMesh -dict system/refineMeshDict2 -overwrite > log.refineMesh2
+
+echo "setSet"
+setSet -constant > log.setSet2 << EOF
+cellSet refineCell1 new boxToCell (1.499 3.279 -0.001) (2.101 3.721 1.701)
+quit
+EOF
+
+echo "refineMesh"
+refineMesh -dict system/refineMeshDict1 -overwrite > log.refineMesh1
+
+#echo "surfaceFeatureExtract"
+#surfaceFeatureExtract > log.feaure
+
+echo "snappyHexMesh"
+snappyHexMesh -overwrite > log.snappy
+
+
+#echo "renumberMesh"
+#renumberMesh -overwrite > log.renumber
+
+echo "setZone"
+./setZone
+
+echo "checkMesh"
+checkMesh > log.checkMesh
+
+echo "End of mesh"
+

@@ -1,0 +1,125 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.2.x-1ef4d132e582
+Exec   : checkMesh
+Date   : Dec 13 2017
+Time   : 15:27:30
+Host   : "queen01"
+PID    : 5254
+Case   : /home/tyou/OpenFOAM/tyou-2.2.x/run/test13b
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Disallowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Time = 0
+
+Mesh stats
+    points:           75539
+    faces:            208054
+    internal faces:   195432
+    cells:            66361
+    faces per cell:   6.08017
+    boundary patches: 41
+    point zones:      0
+    face zones:       0
+    cell zones:       33
+
+Overall number of cells of each type:
+    hexahedra:     63905
+    prisms:        167
+    wedges:        0
+    pyramids:      0
+    tet wedges:    3
+    tetrahedra:    0
+    polyhedra:     2286
+    Breakdown of polyhedra by number of faces:
+        faces   number of cells
+            4   171
+            5   279
+            6   204
+            8   6
+            9   1524
+           21   102
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+                   Patch    Faces   Points                  Surface topology
+                   floor     1600     1681  ok (non-closed singly connected)
+                 ceiling     1600     1681  ok (non-closed singly connected)
+                   north      771      836  ok (non-closed singly connected)
+                   south      960     1025  ok (non-closed singly connected)
+                    east      960     1025  ok (non-closed singly connected)
+                    west      690      787  ok (non-closed singly connected)
+                   inlet      270      304  ok (non-closed singly connected)
+                  outlet      189      220  ok (non-closed singly connected)
+      back_left_Object01       96      131  ok (non-closed singly connected)
+     back_right_Object01      106      142  ok (non-closed singly connected)
+     chest_left_Object01      115      158  ok (non-closed singly connected)
+    chest_right_Object01      104      142  ok (non-closed singly connected)
+    waist_left_back_Object01       59       96  ok (non-closed singly connected)
+    waist_left_front_Object01       56       86  ok (non-closed singly connected)
+    waist_right_back_Object01       59       97  ok (non-closed singly connected)
+    waist_right_front_Object01       54       86  ok (non-closed singly connected)
+    femur_left_back_Object01      134      181  ok (non-closed singly connected)
+    femur_left_front_Object01      140      191  ok (non-closed singly connected)
+    femur_right_back_Object01      130      178  ok (non-closed singly connected)
+    femur_right_front_Object01      141      192  ok (non-closed singly connected)
+    lowerleg_left_back_Object01      101      132  ok (non-closed singly connected)
+    lowerleg_left_front_Object01       97      132  ok (non-closed singly connected)
+    lowerleg_right_back_Object01       91      121  ok (non-closed singly connected)
+    lowerleg_right_front_Object01      111      145  ok (non-closed singly connected)
+    upperarm_left_back_Object01       64       95  ok (non-closed singly connected)
+    upperarm_left_front_Object01       53       81  ok (non-closed singly connected)
+    upperarm_right_back_Object01       63       95  ok (non-closed singly connected)
+    upperarm_right_front_Object01       54       84  ok (non-closed singly connected)
+    forearm_left_back_Object01       52       77  ok (non-closed singly connected)
+    forearm_left_front_Object01       39       59  ok (non-closed singly connected)
+    forearm_right_back_Object01       49       73  ok (non-closed singly connected)
+    forearm_right_front_Object01       41       60  ok (non-closed singly connected)
+      foot_left_Object01       75       93  ok (non-closed singly connected)
+     foot_right_Object01       78       94  ok (non-closed singly connected)
+      hand_left_Object01       61       76  ok (non-closed singly connected)
+     hand_right_Object01       60       75  ok (non-closed singly connected)
+      neck_back_Object01       14       29  ok (non-closed singly connected)
+     neck_front_Object01       20       34  ok (non-closed singly connected)
+           face_Object01       53       73  ok (non-closed singly connected)
+           head_Object01      120      160  ok (non-closed singly connected)
+                 bed_bed     3092     3140      ok (closed singly connected)
+
+Checking geometry...
+    Overall domain bounding box (0 1.62 -2) (4 4.02 2)
+    Mesh (non-empty, non-wedge) directions (1 1 1)
+    Mesh (non-empty) directions (1 1 1)
+    Boundary openness (5.5927e-17 1.72686e-15 1.82565e-16) OK.
+    Max cell openness = 3.46901e-16 OK.
+    Max aspect ratio = 4.21412 OK.
+    Minimum face area = 8.70121e-05. Maximum face area = 0.0107957.  Face area magnitudes OK.
+    Min volume = 2.46891e-06. Max volume = 0.00108059.  Total volume = 38.0711.  Cell volumes OK.
+    Mesh non-orthogonality Max: 40.6058 average: 5.72036
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 2.92504 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+End
+

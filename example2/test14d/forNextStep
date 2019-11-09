@@ -1,0 +1,357 @@
+#!/bin/sh
+#===========================================================================#
+#
+# This program was made by imoan 2016.11.11
+# for coupled analysis for CFD and human thermal model.
+#
+# This program is to change boundary conditions of each segments
+# of human body.
+#
+# This program works with 
+#   1) T
+#   2) X
+#   3) Qc.txt
+#   4) Qe.txt
+#
+#===========================================================================#
+
+#---------------------------------------------------------------------------#
+# for T
+#---------------------------------------------------------------------------#
+cp T T.org
+mv T T0
+
+#back_left
+back_left_old=`cat Qc_old.txt | awk 'NR==8'`
+back_left_new=`cat Qc_new.txt | awk 'NR==8'`
+sed -e "s/$back_left_old/$back_left_new/" T0 > T1
+
+#back_right
+back_right_old=`cat Qc_old.txt | awk 'NR==7'`
+back_right_new=`cat Qc_new.txt | awk 'NR==7'`
+sed -e "s/$back_right_old/$back_right_new/" T1 > T2
+
+#chest_left
+chest_left_old=`cat Qc_old.txt | awk 'NR==6'`
+chest_left_new=`cat Qc_new.txt | awk 'NR==6'`
+sed -e "s/$chest_left_old/$chest_left_new/" T2 > T3
+
+#chest_right
+chest_right_old=`cat Qc_old.txt | awk 'NR==5'`
+chest_right_new=`cat Qc_new.txt | awk 'NR==5'`
+sed -e "s/$chest_right_old/$chest_right_new/" T3 > T4
+
+#waist_left_back
+waist_left_back_old=`cat Qc_old.txt | awk 'NR==12'`
+waist_left_back_new=`cat Qc_new.txt | awk 'NR==12'`
+sed -e "s/$waist_left_back_old/$waist_left_back_new/" T4 > T5
+
+#waist_left_front
+waist_left_front_old=`cat Qc_old.txt | awk 'NR==10'`
+waist_left_front_new=`cat Qc_new.txt | awk 'NR==10'`
+sed -e "s/$waist_left_front_old/$waist_left_front_new/" T5 > T6
+
+#waist_right_back
+waist_right_back_old=`cat Qc_old.txt | awk 'NR==11'`
+waist_right_back_new=`cat Qc_new.txt | awk 'NR==11'`
+sed -e "s/$waist_right_back_old/$waist_right_back_new/" T6 > T7
+
+#waist_right_front
+waist_right_front_old=`cat Qc_old.txt | awk 'NR==9'`
+waist_right_front_new=`cat Qc_new.txt | awk 'NR==9'`
+sed -e "s/$waist_right_front_old/$waist_right_front_new/" T7 > T8
+
+#femur_left_back
+femur_left_back_old=`cat Qc_old.txt | awk 'NR==29'`
+femur_left_back_new=`cat Qc_new.txt | awk 'NR==29'`
+sed -e "s/$femur_left_back_old/$femur_left_back_new/" T8 > T9
+
+#femur_left_front
+femur_left_front_old=`cat Qc_old.txt | awk 'NR==28'`
+femur_left_front_new=`cat Qc_new.txt | awk 'NR==28'`
+sed -e "s/$femur_left_front_old/$femur_left_front_new/" T9 > T10
+
+#femur_right_back
+femur_right_back_old=`cat Qc_old.txt | awk 'NR==24'`
+femur_right_back_new=`cat Qc_new.txt | awk 'NR==24'`
+sed -e "s/$femur_right_back_old/$femur_right_back_new/" T10 > T11
+
+#femur_right_front
+femur_right_front_old=`cat Qc_old.txt | awk 'NR==23'`
+femur_right_front_new=`cat Qc_new.txt | awk 'NR==23'`
+sed -e "s/$femur_right_front_old/$femur_right_front_new/" T11 > T12
+
+#lowerleg_left_back
+lowerleg_left_back_old=`cat Qc_old.txt | awk 'NR==31'`
+lowerleg_left_back_new=`cat Qc_new.txt | awk 'NR==31'`
+sed -e "s/$lowerleg_left_back_old/$lowerleg_left_back_new/" T12 > T13
+
+#lowerleg_left_front
+lowerleg_left_front_old=`cat Qc_old.txt | awk 'NR==30'`
+lowerleg_left_front_new=`cat Qc_new.txt | awk 'NR==30'`
+sed -e "s/$lowerleg_left_front_old/$lowerleg_left_front_new/" T13 > T14
+
+#lowerleg_right_back
+lowerleg_right_back_old=`cat Qc_old.txt | awk 'NR==26'`
+lowerleg_right_back_new=`cat Qc_new.txt | awk 'NR==26'`
+sed -e "s/$lowerleg_right_back_old/$lowerleg_right_back_new/" T14 > T15
+
+#lowerleg_right_front
+lowerleg_right_front_old=`cat Qc_old.txt | awk 'NR==25'`
+lowerleg_right_front_new=`cat Qc_new.txt | awk 'NR==25'`
+sed -e "s/$lowerleg_right_front_old/$lowerleg_right_front_new/" T15 > T16
+
+#upperarm_left_back
+upperarm_left_back_old=`cat Qc_old.txt | awk 'NR==19'`
+upperarm_left_back_new=`cat Qc_new.txt | awk 'NR==19'`
+sed -e "s/$upperarm_left_back_old/$upperarm_left_back_new/" T16 > T17
+
+#upperarm_left_front
+upperarm_left_front_old=`cat Qc_old.txt | awk 'NR==18'`
+upperarm_left_front_new=`cat Qc_new.txt | awk 'NR==18'`
+sed -e "s/$upperarm_left_front_old/$upperarm_left_front_new/" T17 > T18
+
+#upperarm_right_back
+upperarm_right_back_old=`cat Qc_old.txt | awk 'NR==14'`
+upperarm_right_back_new=`cat Qc_new.txt | awk 'NR==14'`
+sed -e "s/$upperarm_right_back_old/$upperarm_right_back_new/" T18 > T19
+
+#upperarm_right_front
+upperarm_right_front_old=`cat Qc_old.txt | awk 'NR==13'`
+upperarm_right_front_new=`cat Qc_new.txt | awk 'NR==13'`
+sed -e "s/$upperarm_right_front_old/$upperarm_right_front_new/" T19 > T20
+
+#forearm_left_back
+forearm_left_old=`cat Qc_old.txt | awk 'NR==21'`
+forearm_left_new=`cat Qc_new.txt | awk 'NR==21'`
+sed -e "s/$forearm_left_old/$forearm_left_new/" T20 > T21
+
+#forearm_left_front
+forearm_left_front_old=`cat Qc_old.txt | awk 'NR==20'`
+forearm_left_front_new=`cat Qc_new.txt | awk 'NR==20'`
+sed -e "s/$forearm_left_front_old/$forearm_left_front_new/" T21 > T22
+
+#forearm_right_back
+forearm_right_back_old=`cat Qc_old.txt | awk 'NR==16'`
+forearm_right_back_new=`cat Qc_new.txt | awk 'NR==16'`
+sed -e "s/$forearm_right_back_old/$forearm_right_back_new/" T22 > T23
+
+#forearm_right_front
+forearm_right_front_old=`cat Qc_old.txt | awk 'NR==15'`
+forearm_right_front_new=`cat Qc_new.txt | awk 'NR==15'`
+sed -e "s/$forearm_right_front_old/$forearm_right_front_new/" T23 > T24
+
+#foot_left
+foot_left_old=`cat Qc_old.txt | awk 'NR==32'`
+foot_left_new=`cat Qc_new.txt | awk 'NR==32'`
+sed -e "s/$foot_left_old/$foot_left_new/" T24 > T25
+
+#foot_right
+foot_right_old=`cat Qc_old.txt | awk 'NR==27'`
+foot_right_new=`cat Qc_new.txt | awk 'NR==27'`
+sed -e "s/$foot_right_old/$foot_right_new/" T25 > T26
+
+#hand_left
+hand_left_old=`cat Qc_old.txt | awk 'NR==22'`
+hand_left_new=`cat Qc_new.txt | awk 'NR==22'`
+sed -e "s/$hand_left_old/$hand_left_new/" T26 > T27
+
+#hand_right
+hand_right_old=`cat Qc_old.txt | awk 'NR==17'`
+hand_right_new=`cat Qc_new.txt | awk 'NR==17'`
+sed -e "s/$hand_right_old/$hand_right_new/" T27 > T28
+
+#neck_back
+neck_back_old=`cat Qc_old.txt | awk 'NR==4'`
+neck_back_new=`cat Qc_new.txt | awk 'NR==4'`
+sed -e "s/$neck_back_old/$neck_back_new/" T28 > T29
+
+#neck_front
+neck_front_old=`cat Qc_old.txt | awk 'NR==3'`
+neck_front_new=`cat Qc_new.txt | awk 'NR==3'`
+sed -e "s/$neck_front_old/$neck_front_new/" T29 > T30
+
+#face
+face_old=`cat Qc_old.txt | awk 'NR==1'`
+face_new=`cat Qc_new.txt | awk 'NR==1'`
+sed -e "s/$face_old/$face_new/" T30 > T31
+
+#head
+head_old=`cat Qc_old.txt | awk 'NR==2'`
+head_new=`cat Qc_new.txt | awk 'NR==2'`
+sed -e "s/$head_old/$head_new/" T31 > T
+
+rm T0 T1* T2* T3* T4 T5 T6 T7 T8 T9
+
+#---------------------------------------------------------------------------#
+# for X
+#---------------------------------------------------------------------------#
+
+cp X X.org
+mv X X0
+
+#back_left
+back_left_old=`cat Qe_old.txt | awk 'NR==8'`
+back_left_new=`cat Qe_new.txt | awk 'NR==8'`
+sed -e "s/$back_left_old/$back_left_new/" X0 > X1
+
+#back_right
+back_right_old=`cat Qe_old.txt | awk 'NR==7'`
+back_right_new=`cat Qe_new.txt | awk 'NR==7'`
+sed -e "s/$back_right_old/$back_right_new/" X1 > X2
+
+#chest_left
+chest_left_old=`cat Qe_old.txt | awk 'NR==6'`
+chest_left_new=`cat Qe_new.txt | awk 'NR==6'`
+sed -e "s/$chest_left_old/$chest_left_new/" X2 > X3
+
+#chest_right
+chest_right_old=`cat Qe_old.txt | awk 'NR==5'`
+chest_right_new=`cat Qe_new.txt | awk 'NR==5'`
+sed -e "s/$chest_right_old/$chest_right_new/" X3 > X4
+
+#waist_left_back
+waist_left_back_old=`cat Qe_old.txt | awk 'NR==12'`
+waist_left_back_new=`cat Qe_new.txt | awk 'NR==12'`
+sed -e "s/$waist_left_back_old/$waist_left_back_new/" X4 > X5
+
+#waist_left_front
+waist_left_front_old=`cat Qe_old.txt | awk 'NR==10'`
+waist_left_front_new=`cat Qe_new.txt | awk 'NR==10'`
+sed -e "s/$waist_left_front_old/$waist_left_front_new/" X5 > X6
+
+#waist_right_back
+waist_right_back_old=`cat Qe_old.txt | awk 'NR==11'`
+waist_right_back_new=`cat Qe_new.txt | awk 'NR==11'`
+sed -e "s/$waist_right_back_old/$waist_right_back_new/" X6 > X7
+
+#waist_right_front
+waist_right_front_old=`cat Qe_old.txt | awk 'NR==9'`
+waist_right_front_new=`cat Qe_new.txt | awk 'NR==9'`
+sed -e "s/$waist_right_front_old/$waist_right_front_new/" X7 > X8
+
+#femur_left_back
+femur_left_back_old=`cat Qe_old.txt | awk 'NR==29'`
+femur_left_back_new=`cat Qe_new.txt | awk 'NR==29'`
+sed -e "s/$femur_left_back_old/$femur_left_back_new/" X8 > X9
+
+#femur_left_front
+femur_left_front_old=`cat Qe_old.txt | awk 'NR==28'`
+femur_left_front_new=`cat Qe_new.txt | awk 'NR==28'`
+sed -e "s/$femur_left_front_old/$femur_left_front_new/" X9 > X10
+
+#femur_right_back
+femur_right_back_old=`cat Qe_old.txt | awk 'NR==24'`
+femur_right_back_new=`cat Qe_new.txt | awk 'NR==24'`
+sed -e "s/$femur_right_back_old/$femur_right_back_new/" X10 > X11
+
+#femur_right_front
+femur_right_front_old=`cat Qe_old.txt | awk 'NR==23'`
+femur_right_front_new=`cat Qe_new.txt | awk 'NR==23'`
+sed -e "s/$femur_right_front_old/$femur_right_front_new/" X11 > X12
+
+#lowerleg_left_back
+lowerleg_left_back_old=`cat Qe_old.txt | awk 'NR==31'`
+lowerleg_left_back_new=`cat Qe_new.txt | awk 'NR==31'`
+sed -e "s/$lowerleg_left_back_old/$lowerleg_left_back_new/" X12 > X13
+
+#lowerleg_left_front
+lowerleg_left_front_old=`cat Qe_old.txt | awk 'NR==30'`
+lowerleg_left_front_new=`cat Qe_new.txt | awk 'NR==30'`
+sed -e "s/$lowerleg_left_front_old/$lowerleg_left_front_new/" X13 > X14
+
+#lowerleg_right_back
+lowerleg_right_back_old=`cat Qe_old.txt | awk 'NR==26'`
+lowerleg_right_back_new=`cat Qe_new.txt | awk 'NR==26'`
+sed -e "s/$lowerleg_right_back_old/$lowerleg_right_back_new/" X14 > X15
+
+#lowerleg_right_front
+lowerleg_right_front_old=`cat Qe_old.txt | awk 'NR==25'`
+lowerleg_right_front_new=`cat Qe_new.txt | awk 'NR==25'`
+sed -e "s/$lowerleg_right_front_old/$lowerleg_right_front_new/" X15 > X16
+
+#upperarm_left_back
+upperarm_left_back_old=`cat Qe_old.txt | awk 'NR==19'`
+upperarm_left_back_new=`cat Qe_new.txt | awk 'NR==19'`
+sed -e "s/$upperarm_left_back_old/$upperarm_left_back_new/" X16 > X17
+
+#upperarm_left_front
+upperarm_left_front_old=`cat Qe_old.txt | awk 'NR==18'`
+upperarm_left_front_new=`cat Qe_new.txt | awk 'NR==18'`
+sed -e "s/$upperarm_left_front_old/$upperarm_left_front_new/" X17 > X18
+
+#upperarm_right_back
+upperarm_right_back_old=`cat Qe_old.txt | awk 'NR==14'`
+upperarm_right_back_new=`cat Qe_new.txt | awk 'NR==14'`
+sed -e "s/$upperarm_right_back_old/$upperarm_right_back_new/" X18 > X19
+
+#upperarm_right_front
+upperarm_right_front_old=`cat Qe_old.txt | awk 'NR==13'`
+upperarm_right_front_new=`cat Qe_new.txt | awk 'NR==13'`
+sed -e "s/$upperarm_right_front_old/$upperarm_right_front_new/" X19 > X20
+
+#forearm_left_back
+forearm_left_old=`cat Qe_old.txt | awk 'NR==21'`
+forearm_left_new=`cat Qe_new.txt | awk 'NR==21'`
+sed -e "s/$forearm_left_old/$forearm_left_new/" X20 > X21
+
+#forearm_left_front
+forearm_left_front_old=`cat Qe_old.txt | awk 'NR==20'`
+forearm_left_front_new=`cat Qe_new.txt | awk 'NR==20'`
+sed -e "s/$forearm_left_front_old/$forearm_left_front_new/" X21 > X22
+
+#forearm_right_back
+forearm_right_back_old=`cat Qe_old.txt | awk 'NR==16'`
+forearm_right_back_new=`cat Qe_new.txt | awk 'NR==16'`
+sed -e "s/$forearm_right_back_old/$forearm_right_back_new/" X22 > X23
+
+#forearm_right_front
+forearm_right_front_old=`cat Qe_old.txt | awk 'NR==15'`
+forearm_right_front_new=`cat Qe_new.txt | awk 'NR==15'`
+sed -e "s/$forearm_right_front_old/$forearm_right_front_new/" X23 > X24
+
+#foot_left
+foot_left_old=`cat Qe_old.txt | awk 'NR==32'`
+foot_left_new=`cat Qe_new.txt | awk 'NR==32'`
+sed -e "s/$foot_left_old/$foot_left_new/" X24 > X25
+
+#foot_right
+foot_right_old=`cat Qe_old.txt | awk 'NR==27'`
+foot_right_new=`cat Qe_new.txt | awk 'NR==27'`
+sed -e "s/$foot_right_old/$foot_right_new/" X25 > X26
+
+#hand_left
+hand_left_old=`cat Qe_old.txt | awk 'NR==22'`
+hand_left_new=`cat Qe_new.txt | awk 'NR==22'`
+sed -e "s/$hand_left_old/$hand_left_new/" X26 > X27
+
+#hand_right
+hand_right_old=`cat Qe_old.txt | awk 'NR==17'`
+hand_right_new=`cat Qe_new.txt | awk 'NR==17'`
+sed -e "s/$hand_right_old/$hand_right_new/" X27 > X28
+
+#neck_back
+neck_back_old=`cat Qe_old.txt | awk 'NR==4'`
+neck_back_new=`cat Qe_new.txt | awk 'NR==4'`
+sed -e "s/$neck_back_old/$neck_back_new/" X28 > X29
+
+#neck_front
+neck_front_old=`cat Qe_old.txt | awk 'NR==3'`
+neck_front_new=`cat Qe_new.txt | awk 'NR==3'`
+sed -e "s/$neck_front_old/$neck_front_new/" X29 > X30
+
+#face
+face_old=`cat Qe_old.txt | awk 'NR==1'`
+face_new=`cat Qe_new.txt | awk 'NR==1'`
+sed -e "s/$face_old/$face_new/" X30 > X31
+
+#head
+head_old=`cat Qe_old.txt | awk 'NR==2'`
+head_new=`cat Qe_new.txt | awk 'NR==2'`
+sed -e "s/$head_old/$head_new/" X31 > X
+
+rm X0 X1* X2* X3* X4 X5 X6 X7 X8 X9
+
+#===========================================================================#
+echo "end"
+#===========================================================================#

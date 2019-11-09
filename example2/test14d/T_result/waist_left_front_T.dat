@@ -1,0 +1,4 @@
+# Source : cellZone waist_left_front_T
+# Cells  : 355
+# Time	sum(V)	volAverage(T)	volAverage(X)	volAverage(p)	volAverage(Qr)
+600	0.00526065	302.192	0.00861476	100040	0

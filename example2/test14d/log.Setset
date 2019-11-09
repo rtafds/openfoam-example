@@ -1,0 +1,45 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.2.x-1ef4d132e582
+Exec   : setSet -constant
+Date   : Dec 13 2017
+Time   : 15:27:16
+Host   : "queen01"
+PID    : 5245
+Case   : /home/tyou/OpenFOAM/tyou-2.2.x/run/test13b
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Disallowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = constant
+
+Time:constant  cells:38400  faces:118720  points:42025  patches:6  bb:(0 1.62 -2) (4 4.02 2)
+
+Time = constant
+    mesh not changed.
+Please type 'help', 'quit' or a set command after prompt.
+Command>    Set:inlet  Size:0  Action:new
+    Adding faces with centre within boxes 1((3.999 2.029 -0.901) (4.001 3.531 0.901))
+    Writing inlet (size 270) to "constant/polyMesh/sets/inlet" and to vtk file "VTK/inlet/inlet_0.vtk"
+
+Command>    Set:outlet  Size:0  Action:new
+    Adding faces with centre within boxes 1((-0.001 1.919 -2.001) (0.901 4.021 -1.999))
+    Writing outlet (size 189) to "constant/polyMesh/sets/outlet" and to vtk file "VTK/outlet/outlet_0.vtk"
+
+Command>    Set:refineCell2  Size:0  Action:new
+    Adding cells with center within boxes 1((1.249 3.279 -0.251) (2.401 3.921 1.801))
+    Writing refineCell2 (size 1512) to "constant/polyMesh/sets/refineCell2" and to vtk file "VTK/refineCell2/refineCell2_0.vtk"
+
+Command>Quitting ...
+
+End
+

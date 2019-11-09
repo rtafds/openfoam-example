@@ -1,0 +1,4 @@
+# Source : cellZone lowerleg_right_front_T
+# Cells  : 633
+# Time	sum(V)	volAverage(T)	volAverage(X)	volAverage(p)	volAverage(Qr)
+600	0.010036	301.607	0.0100434	100041	0

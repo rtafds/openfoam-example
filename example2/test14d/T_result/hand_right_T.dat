@@ -1,0 +1,4 @@
+# Source : cellZone hand_right_T
+# Cells  : 105
+# Time	sum(V)	volAverage(T)	volAverage(X)	volAverage(p)	volAverage(Qr)
+600	0.00155538	301.415	0.0105702	100041	0

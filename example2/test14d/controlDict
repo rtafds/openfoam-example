@@ -1,0 +1,1374 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     buoyantPimpleFoam;
+
+startFrom       latestTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         2445;
+
+deltaT          0.01;
+
+writeControl    timeStep;
+
+writeInterval   1500;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable true;
+
+adjustTimeStep  no;
+
+maxCo           0.5;
+
+functions
+{
+    back_left_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      back_left_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    back_right_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      back_right_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    chest_left_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      chest_left_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    chest_right_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      chest_right_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    waist_left_back_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      waist_left_back_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    waist_left_front_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      waist_left_front_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    waist_right_back_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      waist_right_back_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    waist_right_front_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      waist_right_front_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    femur_left_back_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      femur_left_back_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    femur_left_front_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      femur_left_front_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    femur_right_back_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      femur_right_back_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    femur_right_front_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      femur_right_front_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    lowerleg_left_back_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      lowerleg_left_back_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    lowerleg_left_front_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      lowerleg_left_front_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    lowerleg_right_back_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      lowerleg_right_back_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    lowerleg_right_front_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      lowerleg_right_front_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    upperarm_left_back_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      upperarm_left_back_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    upperarm_left_front_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      upperarm_left_front_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    upperarm_right_back_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      upperarm_right_back_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    upperarm_right_front_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      upperarm_right_front_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    forearm_left_back_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      forearm_left_back_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    forearm_left_front_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      forearm_left_front_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    forearm_right_back_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      forearm_right_back_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    forearm_right_front_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      forearm_right_front_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    foot_left_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      foot_left_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    foot_right_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      foot_right_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    hand_left_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      hand_left_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    hand_right_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      hand_right_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    neck_back_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      neck_back_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    neck_front_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      neck_front_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    face_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      face_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    head_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      head_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    back_left_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      back_left_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    back_right_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      back_right_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    chest_left_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      chest_left_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    chest_right_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      chest_right_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    waist_left_back_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      waist_left_back_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    waist_left_front_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      waist_left_front_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    waist_right_back_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      waist_right_back_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    waist_right_front_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      waist_right_front_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    femur_left_back_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      femur_left_back_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    femur_left_front_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      femur_left_front_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    femur_right_back_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      femur_right_back_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    femur_right_front_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      femur_right_front_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    lowerleg_left_back_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      lowerleg_left_back_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    lowerleg_left_front_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      lowerleg_left_front_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    lowerleg_right_back_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      lowerleg_right_back_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    lowerleg_right_front_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      lowerleg_right_front_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    upperarm_left_back_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      upperarm_left_back_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    upperarm_left_front_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      upperarm_left_front_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    upperarm_right_back_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      upperarm_right_back_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    upperarm_right_front_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      upperarm_right_front_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    forearm_left_back_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      forearm_left_back_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    forearm_left_front_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      forearm_left_front_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    forearm_right_back_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      forearm_right_back_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    forearm_right_front_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      forearm_right_front_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    foot_left_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      foot_left_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    foot_right_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      foot_right_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    hand_left_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      hand_left_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    hand_right_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      hand_right_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    neck_back_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      neck_back_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    neck_front_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      neck_front_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    face_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      face_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    head_O
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      head_Object01;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    floor
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      floor;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    ceiling
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      ceiling;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    north
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      north;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    south
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      south;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    east
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      east;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    west
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      west;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    eastwindow
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      eastwindow;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    westwindow
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      westwindow;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    Lsouthwindow
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      Lsouthwindow;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    Leastwindow
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        surfaceFormat   foamFile;
+        source          patch;
+        sourceName      Leastwindow;
+        operation       areaAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+    w_internal_T
+    {
+        type            cellSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   outputTime;
+        log             true;
+        valueOutput     true;
+        source          cellZone;
+        sourceName      w_internal_T;
+        operation       volAverage;
+
+        fields
+        (
+            T X p Qr
+        );
+    }
+}
+
+
+// ************************************************************************* //

@@ -1,0 +1,812 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      snappyHexMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Which of the steps to run
+castellatedMesh false;
+snap            false;
+addLayers       true;
+
+geometry
+{
+    back_left.stl
+    {
+        type triSurfaceMesh;
+        name back_left;
+    }
+    back_right.stl
+    {
+        type triSurfaceMesh;
+        name back_right;
+    }
+    chest_left.stl
+    {
+        type triSurfaceMesh;
+        name chest_left;
+    }
+    chest_right.stl
+    {
+        type triSurfaceMesh;
+        name chest_right;
+    }
+    waist_left_back.stl
+    {
+        type triSurfaceMesh;
+        name waist_left_back;
+    }
+    waist_left_front.stl
+    {
+        type triSurfaceMesh;
+        name waist_left_front;
+    }
+    waist_right_back.stl
+    {
+        type triSurfaceMesh;
+        name waist_right_back;
+    }
+    waist_right_front.stl
+    {
+        type triSurfaceMesh;
+        name waist_right_front;
+    }
+    femur_left_back.stl
+    {
+        type triSurfaceMesh;
+        name femur_left_back;
+    }
+    femur_left_front.stl
+    {
+        type triSurfaceMesh;
+        name femur_left_front;
+    }
+    femur_right_back.stl
+    {
+        type triSurfaceMesh;
+        name femur_right_back;
+    }
+    femur_right_front.stl
+    {
+        type triSurfaceMesh;
+        name femur_right_front;
+    }
+    lowerleg_left_back.stl
+    {
+        type triSurfaceMesh;
+        name lowerleg_left_back;
+    }
+    lowerleg_left_front.stl
+    {
+        type triSurfaceMesh;
+        name lowerleg_left_front;
+    }
+    lowerleg_right_back.stl
+    {
+        type triSurfaceMesh;
+        name lowerleg_right_back;
+    }
+    lowerleg_right_front.stl
+    {
+        type triSurfaceMesh;
+        name lowerleg_right_front;
+    }
+    upperarm_left_back.stl
+    {
+        type triSurfaceMesh;
+        name upperarm_left_back;
+    }
+    upperarm_left_front.stl
+    {
+        type triSurfaceMesh;
+        name upperarm_left_front;
+    }
+    upperarm_right_back.stl
+    {
+        type triSurfaceMesh;
+        name upperarm_right_back;
+    }
+    upperarm_right_front.stl
+    {
+        type triSurfaceMesh;
+        name upperarm_right_front;
+    }
+    forearm_left_back.stl
+    {
+        type triSurfaceMesh;
+        name forearm_left_back;
+    }
+    forearm_left_front.stl
+    {
+        type triSurfaceMesh;
+        name forearm_left_front;
+    }
+    forearm_right_back.stl
+    {
+        type triSurfaceMesh;
+        name forearm_right_back;
+    }
+    forearm_right_front.stl
+    {
+        type triSurfaceMesh;
+        name forearm_right_front;
+    }
+    foot_left.stl
+    {
+        type triSurfaceMesh;
+        name foot_left;
+    }
+    foot_right.stl
+    {
+        type triSurfaceMesh;
+        name foot_right;
+    }
+    hand_left.stl
+    {
+        type triSurfaceMesh;
+        name hand_left;
+    }
+    hand_right.stl
+    {
+        type triSurfaceMesh;
+        name hand_right;
+    }
+    neck_back.stl
+    {
+        type triSurfaceMesh;
+        name neck_back;
+    }
+    neck_front.stl
+    {
+        type triSurfaceMesh;
+        name neck_front;
+    }
+    face.stl
+    {
+        type triSurfaceMesh;
+        name face;
+    }
+    head.stl
+    {
+        type triSurfaceMesh;
+        name head;
+    }
+    bed.stl
+    {
+        type triSurfaceMesh;
+        name bed;
+    }
+
+};
+
+
+// Settings for the castellatedMesh generation.
+castellatedMeshControls
+{
+    maxLocalCells 1000000;
+
+    maxGlobalCells 4000000;
+
+    minRefinementCells 0;
+
+    maxLoadUnbalance 0.10;
+
+    nCellsBetweenLevels 1;
+
+    features
+    (
+        {
+            file "bed.eMesh";
+            level 1;
+        }
+
+        {
+            file "back_left.eMesh";
+            level 2;
+        }
+
+        {
+            file "back_right.eMesh";
+            level 2;
+        }
+
+        {
+            file "chest_left.eMesh";
+            level 2;
+        }
+
+        {
+            file "chest_right.eMesh";
+            level 2;
+        }
+
+        {
+            file "waist_left_back.eMesh";
+            level 2;
+        }
+
+        {
+            file "waist_left_front.eMesh";
+            level 2;
+        }
+
+        {
+            file "waist_right_back.eMesh";
+            level 2;
+        }
+
+        {
+            file "waist_right_front.eMesh";
+            level 2;
+        }
+
+        {
+            file "femur_left_back.eMesh";
+            level 2;
+        }
+
+        {
+            file "femur_left_front.eMesh";
+            level 2;
+        }
+
+        {
+            file "femur_right_back.eMesh";
+            level 2;
+        }
+
+        {
+            file "femur_right_front.eMesh";
+            level 2;
+        }
+
+        {
+            file "lowerleg_left_back.eMesh";
+            level 2;
+        }
+
+        {
+            file "lowerleg_left_front.eMesh";
+            level 2;
+        }
+
+        {
+            file "lowerleg_right_back.eMesh";
+            level 2;
+        }
+
+        {
+            file "lowerleg_right_front.eMesh";
+            level 2;
+        }
+
+        {
+            file "upperarm_left_back.eMesh";
+            level 2;
+        }
+
+        {
+            file "upperarm_left_front.eMesh";
+            level 2;
+        }
+
+        {
+            file "upperarm_right_back.eMesh";
+            level 2;
+        }
+
+        {
+            file "upperarm_right_front.eMesh";
+            level 2;
+        }
+
+        {
+            file "forearm_left_back.eMesh";
+            level 2;
+        }
+
+        {
+            file "forearm_left_front.eMesh";
+            level 2;
+        }
+
+        {
+            file "forearm_right_back.eMesh";
+            level 2;
+        }
+
+        {
+            file "forearm_right_front.eMesh";
+            level 2;
+        }
+
+        {
+            file "foot_left.eMesh";
+            level 2;
+        }
+
+        {
+            file "foot_right.eMesh";
+            level 2;
+        }
+
+        {
+            file "hand_left.eMesh";
+            level 2;
+        }
+
+        {
+            file "hand_right.eMesh";
+            level 2;
+        }
+
+        {
+            file "neck_back.eMesh";
+            level 2;
+        }
+
+        {
+            file "neck_front.eMesh";
+            level 2;
+        }
+
+        {
+            file "face.eMesh";
+            level 2;
+        }
+
+        {
+            file "head.eMesh";
+            level 2;
+        }
+
+    );
+
+    refinementSurfaces
+    {
+/*
+        humanstand
+        {
+                level (0 0);
+        }
+*/
+        back_left
+        {
+                level (0 0);
+        }
+        back_right
+        {
+                level (0 0);
+        }
+        chest_left
+        {
+                level (0 0);
+        }
+        chest_right
+        {
+                level (0 0);
+        }
+        waist_left_back
+        {
+                level (0 0);
+        }
+        waist_left_front
+        {
+                level (0 0);
+        }
+        waist_right_back
+        {
+                level (0 0);
+        }
+        waist_right_front
+        {
+                level (0 0);
+        }
+        femur_left_back
+        {
+                level (0 0);
+        }
+        femur_left_front
+        {
+                level (0 0);
+        }
+        femur_right_back
+        {
+                level (0 0);
+        }
+        femur_right_front
+        {
+                level (0 0);
+        }
+        lowerleg_left_back
+        {
+                level (0 0);
+        }
+        lowerleg_left_front
+        {
+                level (0 0);
+        }
+        lowerleg_right_back
+        {
+                level (0 0);
+        }
+        lowerleg_right_front
+        {
+                level (0 0);
+        }
+        upperarm_left_back
+        {
+                level (0 0);
+        }
+        upperarm_left_front
+        {
+                level (0 0);
+        }
+        upperarm_right_back
+        {
+                level (0 0);
+        }
+        upperarm_right_front
+        {
+                level (0 0);
+        }
+        forearm_left_back
+        {
+                level (0 0);
+        }
+        forearm_left_front
+        {
+                level (0 0);
+        }
+        forearm_right_back
+        {
+                level (0 0);
+        }
+        forearm_right_front
+        {
+                level (0 0);
+        }
+        foot_left
+        {
+                level (0 0);
+        }
+        foot_right
+        {
+                level (0 0);
+        }
+        hand_left
+        {
+                level (0 0);
+        }
+        hand_right
+        {
+                level (0 0);
+        }
+        neck_back
+        {
+                level (0 0);
+        }
+        neck_front
+        {
+                level (0 0);
+        }
+        face
+        {
+                level (0 0);
+        }
+        head
+        {
+                level (0 0);
+        }
+        bed
+        {
+                level (0 0);
+        }
+    }
+
+    resolveFeatureAngle 30;
+
+    refinementRegions
+    {
+/*
+	humanstand
+	{
+		level (3 3);
+	}
+*/
+    }
+
+    locationInMesh (3 3 0.43);
+
+    allowFreeStandingZoneFaces true;
+}
+
+// Settings for the snapping.
+snapControls
+{
+    nSmoothPatch 3;
+
+    tolerance 2.0;
+
+    nSolveIter 30;
+
+    nRelaxIter 5;
+/*
+    nFeatureSnapIter 10;
+
+    implicitFeatureSnap ture;
+
+    explicitFeatureSnap false;
+
+    multiRegionFeatureSnap false;
+*/
+
+}
+
+// Settings for the layer addition.
+addLayersControls
+{
+    relativeSizes true;
+
+    layers
+    {
+        bed_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        back_left_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        back_right_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        chest_left_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        chest_right_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        waist_left_back_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        waist_left_front_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        waist_right_back_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        waist_right_front_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        femur_left_back_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        femur_left_front_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        femur_right_back_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        femur_right_front_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        lowerleg_left_back_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        lowerleg_left_front_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        lowerleg_right_back_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        lowerleg_right_front_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        upperarm_left_back_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        upperarm_left_front_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        upperarm_right_back_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        upperarm_right_front_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        forearm_left_back_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        forearm_left_front_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        forearm_right_backt_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        forearm_right_front_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        foot_left_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        foot_right_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        hand_left_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        hand_right_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        neck_back_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        neck_front_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        face_side
+        {
+            nSurfaceLayers 3;
+        }
+
+        head_side
+        {
+            nSurfaceLayers 3;
+        }
+
+    }
+
+    expansionRatio 1.1;
+
+    finalLayerThickness 0.3;
+
+    minThickness 0.1;
+
+    nGrow 0;
+
+    featureAngle 360;
+
+    slipFeatureAngle 30;
+
+    nRelaxIter 3;
+
+    nSmoothSurfaceNormals 1;
+
+    nSmoothNormals 3;
+
+    nSmoothThickness 10;
+
+    maxFaceThicknessRatio 0.5;
+
+    maxThicknessToMedialRatio 0.3;
+
+    minMedianAxisAngle 90;
+
+    nBufferCellsNoExtrude 0;
+
+    nLayerIter 50;
+}
+
+// Generic mesh quality settings. At any undoable phase these determine
+// where to undo.
+meshQualityControls
+{
+
+    errorReduction 0.75;
+
+    maxNonOrtho 65;
+
+    maxBoundarySkewness 20;
+    maxInternalSkewness 4;
+
+    maxConcave 80;
+
+    minVol 1e-13;
+
+    minTetQuality -1e30;
+
+    minArea -1;
+
+    minTwist 0.02;
+
+    minDeterminant 0.001;
+
+    minFaceWeight 0.02;
+
+    minVolRatio 0.01;
+
+    minTriangleTwist -1;
+
+    nSmoothScale 4;
+
+    errorReduction 0.75;
+}
+
+
+// Advanced
+
+// Flags for optional output
+// 0 : only write final meshes
+// 1 : write intermediate meshes
+// 2 : write volScalarField with cellLevel for postprocessing
+// 4 : write current intersections as .obj files
+debug 0;
+
+
+// Merge tolerance. Is fraction of overall bounding box of initial mesh.
+// Note: the write tolerance needs to be higher than this.
+mergeTolerance 1e-6;
+
+
+// ************************************************************************* //

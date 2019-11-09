@@ -1,0 +1,4 @@
+# Source : patch neck_back_Object01
+# Faces  : 14
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	0.00812917	309.293	3.43183e-05	100041	-35.7688

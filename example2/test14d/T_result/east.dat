@@ -1,0 +1,4 @@
+# Source : patch east
+# Faces  : 960
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	9.6	301.132	0	100033	1.23965

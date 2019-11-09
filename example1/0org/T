@@ -1,0 +1,107 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      T;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 1 0 0 0];
+
+internalField   uniform 303.21;
+
+boundaryField
+{
+    ".*"
+    {
+        type          zeroGradient;
+    }
+    ceiling
+    {
+        type          wallHeatTransfer;
+        Tinf          uniform 301; // äOïîâ∑ìx
+        alphaWall     uniform 0.36;   // îMì`íBåWêî
+        value         uniform 300;
+    }
+    floor
+    {
+        type          wallHeatTransfer;
+        Tinf          uniform 301; // äOïîâ∑ìx
+        alphaWall     uniform 0.31;   // îMì`íBåWêî
+        value         uniform 300;
+    }
+    nWall
+    {
+        type          wallHeatTransfer;
+        Tinf          uniform 305.6; // äOïîâ∑ìx
+        alphaWall     uniform 0.54;   // îMì`íBåWêî
+        value         uniform 300;
+    }
+    sWall
+    {
+        type          wallHeatTransfer;
+        Tinf          uniform 313.2; // äOïîâ∑ìx
+        alphaWall     uniform 0.54;   // îMì`íBåWêî
+        value         uniform 300;
+    }
+    eWall
+    {
+        type          wallHeatTransfer;
+        Tinf          uniform 305.6; // äOïîâ∑ìx
+        alphaWall     uniform 0.54;   // îMì`íBåWêî
+        value         uniform 300;
+    }
+    wWall
+    {
+        type          wallHeatTransfer;
+        Tinf          uniform 301;  // äOïîâ∑ìx
+        alphaWall     uniform 1.2;  // îMì`íBåWêî
+        value         uniform 300;
+    }
+    inlet
+    {
+        type          fixedValue;
+        value         uniform 301.5;
+    }
+    outlet
+    {
+        type          zeroGradient;
+    }
+    "(inglass1|inglass2|midglass|outglass)"
+    {
+        type          wallHeatTransfer;
+        Tinf          uniform 301.5; // äOïîâ∑ìx
+        alphaWall     uniform 4.3;   // îMì`íBåWêî(W/m^2*K)
+        value         uniform 300;
+    }
+    sunD_sunD
+    {
+        type          compressible::turbulentHeatFluxTemperature;
+        heatSource    flux;        // flux (îMó¨ë©) Ç‹ÇΩÇÕ power (îMó )
+        q             uniform 63.0; // îMó¨ë© [W/m2] Ç‹ÇΩÇÕ îMó  [W]
+        kappa         fluidThermo;
+        kappaName     none;
+        value         uniform 300;
+    }
+    sunG_sunG
+    {
+        type          compressible::turbulentHeatFluxTemperature;
+        heatSource    flux;        // flux (îMó¨ë©) Ç‹ÇΩÇÕ power (îMó )
+        q             uniform 50.4; // îMó¨ë© [W/m2] Ç‹ÇΩÇÕ îMó  [W]
+        kappa         fluidThermo;
+        kappaName     none;
+        value         uniform 300;
+    }
+}
+
+
+// ************************************************************************* //

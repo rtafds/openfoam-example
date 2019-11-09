@@ -1,0 +1,4 @@
+# Source : patch chest_right_Object01
+# Faces  : 104
+# Time	sum(magSf)	areaAverage(T)	areaAverage(X)	areaAverage(p)	areaAverage(Qr)
+600	0.0644426	309.786	3.95983e-05	100040	-40.4853
